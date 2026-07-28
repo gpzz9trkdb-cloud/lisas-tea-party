@@ -145,6 +145,7 @@ button:hover {
 
 .flap {
 
+    z-index: 3;
     position: absolute;
 
     top: 0;
@@ -166,21 +167,22 @@ button:hover {
 
     position: absolute;
 
-    bottom: 15px;
+    bottom: -5px;
     left: 25px;
 
     width: 130px;
-    height: 80px;
+    height: 85px;
 
-    background: #ffffff;
+    background: #fffdf8;
 
     border-radius: 5px;
 
     box-shadow:
         0 5px 15px rgba(120,90,70,0.12);
 
-}
+    z-index: 1;
 
+}
 
 /* kleine Papierstruktur */
 
@@ -193,12 +195,11 @@ button:hover {
     inset: 0;
 
     background:
-    radial-gradient(
-        rgba(200,170,150,0.15) 1px,
-        transparent 1px
-    );
-
-    background-size: 8px 8px;
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.35),
+            transparent
+        );
 
     pointer-events: none;
 
