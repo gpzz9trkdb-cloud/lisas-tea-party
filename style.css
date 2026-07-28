@@ -119,3 +119,87 @@ button:hover {
         font-size: 60px;
     }
 }
+/* Echter Briefumschlag 💌 */
+
+.envelope {
+    position: relative;
+
+    width: 180px;
+    height: 130px;
+
+    margin: 0 auto 35px;
+
+    background: #fffaf3;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(120, 90, 70, 0.18);
+
+    overflow: hidden;
+
+}
+
+
+/* Umschlag-Klappe */
+
+.flap {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 65px solid #f3ddd3;
+
+}
+
+
+/* Papier im Umschlag */
+
+.letter {
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 25px;
+
+    width: 130px;
+    height: 80px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 5px 15px rgba(120,90,70,0.12);
+
+}
+
+
+/* kleine Papierstruktur */
+
+.envelope::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    radial-gradient(
+        rgba(200,170,150,0.15) 1px,
+        transparent 1px
+    );
+
+    background-size: 8px 8px;
+
+    pointer-events: none;
+
+}
