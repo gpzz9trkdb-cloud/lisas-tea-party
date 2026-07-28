@@ -122,7 +122,6 @@ button:hover {
 
 /* Neuer echter Briefumschlag 💌 */
 
-
 .envelope {
 
     position: relative;
@@ -133,6 +132,8 @@ button:hover {
     margin: 0 auto 35px;
 
     perspective: 800px;
+
+    overflow: hidden;
 
 }
 
@@ -170,10 +171,10 @@ button:hover {
 
     box-shadow: 0 8px 20px rgba(120,90,70,0.15);
 
-    z-index: 3;
-
-    transform: translateY(80px);
-
+    z-index: 4;
+    
+    transform: translateY(0);
+    
     transition: transform 1.4s ease;
 
 }
@@ -260,8 +261,8 @@ button:hover {
 .envelope.open .letter {
 
     transform:
-        translateY(-100px)
-        scale(1.15);
+        translateY(-90px)
+        scale(1.2);
 
     z-index: 20;
 
