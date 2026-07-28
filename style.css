@@ -154,16 +154,21 @@ button:hover {
     border-radius: 8px;
 
     box-shadow:
-        0 5px 15px rgba(120,90,70,0.15);
+        0 8px 25px rgba(120,90,70,0.15);
 
-    z-index: 1;
 
-    transform: translateY(25px);
+    z-index: 3;
 
-    transition: transform 1s ease;
+
+    transform:
+        translateY(50px)
+        scale(0.85);
+
+
+    transition:
+        transform 1.5s cubic-bezier(.25,.8,.25,1);
 
 }
-
 
 /* Rückseite */
 
@@ -264,5 +269,18 @@ button:hover {
         );
 
     pointer-events: none;
+
+}
+
+/* Karte kommt aus dem Umschlag heraus 💌 */
+
+.envelope.open .letter {
+
+    transform:
+        translateY(-120px)
+        scale(1.25);
+
+
+    z-index: 10;
 
 }
