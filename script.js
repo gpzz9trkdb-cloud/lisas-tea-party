@@ -25,7 +25,7 @@ openButton.addEventListener("click", function () {
 
         invitationCard.classList.remove("hidden");
 
-    }, 2500);
+    }, 1000);
 
 
 });
