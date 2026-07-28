@@ -1,0 +1,121 @@
+/* Grunddesign - Lisas Tea Party 🌸 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #faf6f0;
+    color: #5f4b45;
+    font-family: "Lora", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+/* Hauptbereich */
+.invitation {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+/* Briefumschlag */
+.envelope-container {
+    animation: appear 1.5s ease;
+}
+.envelope {
+    width: 150px;
+    height: 110px;
+    margin: 0 auto 30px;
+    background: #fffaf5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    box-shadow:
+        0 10px 25px rgba(120, 90, 70, 0.15);
+}
+/* Überschrift */
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #8b5e63;
+    margin-bottom: 35px;
+}
+/* Buttons */
+button {
+    background: #dca7ad;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: "Lora", serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+    transform: translateY(-3px);
+    background: #c98e96;
+}
+/* Einladungskarte */
+.invitation-card {
+    background: #fffdf9;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 30px rgba(120, 90, 70, 0.12);
+    animation: slideUp 1s ease;
+}
+.invitation-card h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    color: #8b5e63;
+}
+.invitation-card p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+/* versteckte Elemente */
+.hidden {
+    display: none;
+}
+/* Animationen */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Handy Anpassung */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 27px;
+    }
+    .invitation {
+        padding: 20px;
+    }
+    .envelope {
+        width: 130px;
+        height: 95px;
+        font-size: 60px;
+    }
+}
