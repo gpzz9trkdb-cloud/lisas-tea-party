@@ -1,10 +1,14 @@
 const openButton = document.getElementById("openInvitation");
 
-const envelope = document.querySelector(".envelope");
+const envelopePage = document.querySelector(".envelope-container");
+
+const invitationCard = document.querySelector(".invitation-card");
 
 
 openButton.addEventListener("click", function () {
 
-    envelope.classList.add("open");
+    envelopePage.style.display = "none";
+
+    invitationCard.classList.remove("hidden");
 
 });
