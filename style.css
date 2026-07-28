@@ -217,3 +217,31 @@ button:hover {
     transform: translateY(-35px);
 
 }
+
+/* schöner Übergang beim Öffnen */
+
+.envelope-container {
+    transition: opacity 0.5s ease;
+}
+
+
+.envelope.open {
+    animation: envelopeOpen 1s ease;
+}
+
+
+@keyframes envelopeOpen {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08) translateY(-10px);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
