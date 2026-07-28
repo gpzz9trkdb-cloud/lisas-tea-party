@@ -119,72 +119,133 @@ button:hover {
         font-size: 60px;
     }
 }
-/* Echter Briefumschlag 💌 */
+
+/* Neuer echter Briefumschlag 💌 */
+
 
 .envelope {
+
     position: relative;
 
-    width: 180px;
-    height: 130px;
+    width: 220px;
+    height: 150px;
 
     margin: 0 auto 35px;
 
-    background: #fffaf3;
-
-    border-radius: 8px;
-
-    box-shadow:
-        0 15px 35px rgba(120, 90, 70, 0.18);
-
-    overflow: hidden;
+    perspective: 800px;
 
 }
 
 
-/* Umschlag-Klappe */
+/* Karte im Umschlag */
+
+.letter {
+
+    position: absolute;
+
+    width: 170px;
+    height: 110px;
+
+    background: #fffdf8;
+
+    left: 25px;
+    bottom: 20px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 15px rgba(120,90,70,0.15);
+
+    z-index: 1;
+
+    transform: translateY(25px);
+
+    transition: transform 1s ease;
+
+}
+
+
+/* Rückseite */
+
+.envelope-back {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #f8e9df;
+
+    border-radius: 12px;
+
+    z-index: 2;
+
+}
+
+
+/* Vorderseite */
+
+.envelope-front {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 75%;
+
+    background: #f3ddd3;
+
+    border-radius: 0 0 12px 12px;
+
+    z-index: 4;
+
+}
+
+
+/* obere Klappe */
 
 .flap {
 
     position: absolute;
 
     top: 0;
-    left: 0;
 
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 75%;
 
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
-    border-top: 65px solid #efd3ca;
+    background: #efd1c7;
 
-    z-index: 3;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        50% 75%
+    );
 
-}
-
-.letter {
-
-    display: block;
-
-    position: absolute;
-
-    bottom: 20px;
-    left: 25px;
-
-    width: 130px;
-    height: 80px;
-
-    background: #fffdf8;
-
-    border-radius: 5px;
-
-    transform: translateY(80px);
+    transform-origin: top;
 
     transition: transform 1s ease;
 
-    z-index: 1;
+    z-index: 5;
 
 }
 
+
+/* Öffnen */
+
+.envelope.open .flap {
+
+    transform: rotateX(180deg);
+
+}
+
+
+.envelope.open .letter {
+
+    transform: translateY(-80px);
+
+    z-index: 6;
+
+}
 /* kleine Papierstruktur */
 
 .envelope::after {
@@ -203,45 +264,5 @@ button:hover {
         );
 
     pointer-events: none;
-
-}
-
-.envelope.open .flap {
-
-    transform: rotateX(180deg);
-
-}
-
-.envelope.open .letter {
-
-    transform: translateY(-35px);
-
-}
-
-/* schöner Übergang beim Öffnen */
-
-.envelope-container {
-    transition: opacity 0.5s ease;
-}
-
-
-.envelope.open {
-    animation: envelopeOpen 1s ease;
-}
-
-
-@keyframes envelopeOpen {
-
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08) translateY(-10px);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 
 }
