@@ -145,7 +145,6 @@ button:hover {
 
 .flap {
 
-    z-index: 3;
     position: absolute;
 
     top: 0;
@@ -156,31 +155,17 @@ button:hover {
 
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
-    border-top: 65px solid #f3ddd3;
+    border-top: 65px solid #efd3ca;
+
+    z-index: 3;
 
 }
-
 
 /* Papier im Umschlag */
 
 .letter {
 
-    position: absolute;
-
-    bottom: -5px;
-    left: 25px;
-
-    width: 130px;
-    height: 85px;
-
-    background: #fffdf8;
-
-    border-radius: 5px;
-
-    box-shadow:
-        0 5px 15px rgba(120,90,70,0.12);
-
-    z-index: 1;
+    display: none;
 
 }
 
