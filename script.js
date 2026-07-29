@@ -1,49 +1,38 @@
-const button = document.getElementById("openButton");
-const letter = document.querySelector(".letter");
-const envelope = document.querySelector(".envelope");
+const openButton = document.getElementById("openButton");
 const hero = document.querySelector(".hero");
+const invitation = document.getElementById("invitation");
 
-button.addEventListener("click", () => {
+openButton.addEventListener("click", () => {
 
-    button.disabled = true;
+    // Button ausblenden
+    openButton.style.display = "none";
 
-    // Brief fährt langsam heraus
+    // Brief fährt hoch
+    const letter = document.querySelector(".letter");
+
     letter.animate(
         [
             {
-                transform: "translateX(-50%) translateY(0px)",
-                opacity: 1
+                transform: "translateX(-50%) translateY(0)"
             },
             {
-                transform: "translateX(-50%) translateY(-120px)",
-                opacity: 1
+                transform: "translateX(-50%) translateY(-120px)"
             }
         ],
         {
-            duration: 1200,
+            duration: 1000,
             easing: "ease-in-out",
             fill: "forwards"
         }
     );
 
-    // Danach vergrößert sich der Brief
+    // Danach Einladung anzeigen
     setTimeout(() => {
 
-        letter.style.transition = "all 0.9s ease";
+        hero.style.display = "none";
 
-        letter.style.position = "fixed";
-        letter.style.left = "50%";
-        letter.style.top = "50%";
-        letter.style.bottom = "auto";
+        invitation.classList.remove("hidden");
 
-        letter.style.transform = "translate(-50%, -50%)";
-
-        letter.style.width = "90vw";
-        letter.style.maxWidth = "700px";
-        letter.style.aspectRatio = "auto";
-        letter.style.height = "80vh";
-        letter.style.zIndex = "100";
-
-    }, 1200);
+    }, 1100);
 
 });
