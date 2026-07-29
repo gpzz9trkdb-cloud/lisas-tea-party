@@ -66,13 +66,13 @@ body{
 
     left:50%;
 
-    bottom:12px;
+    bottom:35px;
 
     transform:translateX(-50%);
 
-    width:58%;
+    width:38%;
 
-    aspect-ratio:4/5;
+    aspect-ratio:5/7;
 
     background:#fffdf9;
 
