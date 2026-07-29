@@ -1,149 +1,143 @@
-/* Grunddesign - Lisas Tea Party 🌸 */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500&display=swap');
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lora:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #faf6f0;
-    color: #5f4b45;
-    font-family: "Lora", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+
+body{
+
+    background:#faf6f0;
+
+    font-family:"Lora",serif;
+
+    color:#5d4b45;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
 }
-/* Hauptbereich */
-.invitation {
-    width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    text-align: center;
+
+.hero{
+
+    width:min(90%,520px);
+
+    text-align:center;
+
 }
-/* Briefumschlag */
-.envelope-container {
-    animation: appear 1.5s ease;
+
+.envelope-wrapper{
+
+    position:relative;
+
+    width:280px;
+
+    margin:0 auto 40px;
+
 }
-.envelope {
-    width: 150px;
-    height: 110px;
-    margin: 0 auto 30px;
-    background: #fffaf5;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    box-shadow:
-        0 10px 25px rgba(120, 90, 70, 0.15);
+
+.envelope{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+    z-index:2;
+
+    filter:drop-shadow(0 15px 20px rgba(0,0,0,.12));
+
 }
-/* Überschrift */
-h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-weight: 600;
-    color: #8b5e63;
-    margin-bottom: 35px;
+
+.letter{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:35px;
+
+    transform:translateX(-50%);
+
+    width:72%;
+
+    aspect-ratio:3/4;
+
+    background:#fffdf9;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    z-index:1;
+
 }
-/* Buttons */
-button {
-    background: #dca7ad;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-family: "Lora", serif;
-    cursor: pointer;
-    transition: 0.3s ease;
+
+h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2.2rem;
+
+    color:#8b6664;
+
+    margin-bottom:30px;
+
 }
-button:hover {
-    transform: translateY(-3px);
-    background: #c98e96;
+
+button{
+
+    border:none;
+
+    border-radius:999px;
+
+    padding:16px 34px;
+
+    background:#d8a8ad;
+
+    color:white;
+
+    font-family:"Lora",serif;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+
 }
-/* Einladungskarte */
-.invitation-card {
-    background: #fffdf9;
-    padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow:
-        0 10px 30px rgba(120, 90, 70, 0.12);
-    animation: slideUp 1s ease;
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:#cb959c;
+
 }
-.invitation-card h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    color: #8b5e63;
-}
-.invitation-card p {
-    line-height: 1.7;
-    font-size: 16px;
-}
-/* versteckte Elemente */
-.hidden {
-    display: none;
-}
-/* Animationen */
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+
+@media(max-width:600px){
+
+    .envelope-wrapper{
+
+        width:230px;
+
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    h1{
+
+        font-size:1.8rem;
+
     }
-}
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Handy Anpassung */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 27px;
-    }
-    .invitation {
-        padding: 20px;
-    }
-    .envelope {
-        width: 130px;
-        height: 95px;
-        font-size: 60px;
-    }
-}
-
-/* Neuer echter Briefumschlag 💌 */
-
-.envelope {
-
-    width: 280px;
-
-    margin: 0 auto 35px;
-
-    position: relative;
-
-}
-
-.envelope-image {
-
-    display: block;
-
-    width: 100%;
-
-    height: auto;
-
-    user-select: none;
-
-    pointer-events: none;
-
-    filter: drop-shadow(0 12px 18px rgba(80,60,40,.12));
 
 }
