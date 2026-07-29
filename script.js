@@ -1,38 +1,24 @@
-const openButton = document.getElementById("openButton");
-const hero = document.querySelector(".hero");
-const invitation = document.getElementById("invitation");
+function showPage(pageId) {
 
-openButton.addEventListener("click", () => {
+    const pages = document.querySelectorAll(".page");
 
-    // Button ausblenden
-    openButton.style.display = "none";
+    pages.forEach(page => {
+        page.classList.remove("active");
+    });
 
-    // Brief fährt hoch
-    const letter = document.querySelector(".letter");
 
-    letter.animate(
-        [
-            {
-                transform: "translateX(-50%) translateY(0)"
-            },
-            {
-                transform: "translateX(-50%) translateY(-120px)"
-            }
-        ],
-        {
-            duration: 1000,
-            easing: "ease-in-out",
-            fill: "forwards"
-        }
-    );
+    const nextPage = document.getElementById(pageId);
 
-    // Danach Einladung anzeigen
-    setTimeout(() => {
+    if(nextPage){
+        nextPage.classList.add("active");
+    }
 
-        hero.style.display = "none";
+}
 
-        invitation.classList.remove("hidden");
 
-    }, 1100);
 
-});
+function openInvitation(){
+
+    showPage("invitation");
+
+}
