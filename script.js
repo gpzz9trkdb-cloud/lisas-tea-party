@@ -9,6 +9,11 @@ const supabaseClient = supabase.createClient(
     SUPABASE_KEY
 );
 
+function openInvitation(){
+
+    alert("Button funktioniert");
+
+}
 
 // Seiten wechseln
 
