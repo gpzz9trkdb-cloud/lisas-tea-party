@@ -1,38 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lora:wght@400;500&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-
-    background:#faf6f0;
-
-    font-family:"Lora",serif;
-
-    color:#5d4b45;
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    overflow:hidden;
-
-}
+/* Startseite */
 
 .hero{
-
-    width:min(90%,520px);
 
     text-align:center;
 
 }
+
 
 .envelope-wrapper{
 
@@ -40,17 +13,15 @@ body{
 
     width:280px;
 
-    margin:0 auto 40px;
+    margin:0 auto 35px;
 
 }
 
+
+
 .envelope{
 
-    display:block;
-
     width:100%;
-
-    height:auto;
 
     position:relative;
 
@@ -60,15 +31,11 @@ body{
 
 }
 
+
+
 .letter{
 
     position:absolute;
-
-    left:50%;
-
-    bottom:30px;
-
-    transform:translateX(-50%);
 
     width:30%;
 
@@ -76,35 +43,107 @@ body{
 
     background:#fffdf9;
 
-    border-radius:10px;
+    left:50%;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    bottom:30px;
+
+    transform:translateX(-50%);
+
+    border-radius:8px;
 
     z-index:1;
 
 }
 
+
+
+
+
+
+
+/* Überschriften */
+
+
 h1{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:2.2rem;
+    font-size:2.5rem;
 
-    color:#8b6664;
+    color:#607d9d;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
+
+
+
+
+
+/* Papierkarten */
+
+
+.paper{
+
+    width:min(90%,520px);
+
+    background:#fffdf9;
+
+    padding:45px 35px;
+
+    border-radius:14px;
+
+    box-shadow:0 15px 35px rgba(80,70,60,.08);
+
+    border:1px solid rgba(150,150,150,.15);
+
+}
+
+
+
+.paper p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* Daten */
+
+
+.details{
+
+    display:grid;
+
+    gap:18px;
+
+    margin:35px 0;
+
+}
+
+
+
+
+
+/* Buttons */
+
 
 button{
 
     border:none;
 
-    border-radius:999px;
+    border-radius:30px;
 
-    padding:16px 34px;
+    padding:15px 28px;
 
-    background:#d8a8ad;
+    margin:8px;
+
+    background:#a8bfd8;
 
     color:white;
 
@@ -114,137 +153,21 @@ button{
 
     cursor:pointer;
 
-    transition:.25s;
+    transition:.3s;
 
 }
+
+
 
 button:hover{
 
-    transform:translateY(-3px);
-
-    background:#cb959c;
+    transform:translateY(-2px);
 
 }
 
-@media(max-width:600px){
 
-    .envelope-wrapper{
 
-        width:230px;
-
-    }
-
-    h1{
-
-        font-size:1.8rem;
-
-    }
-
-}
-
-/* ---------- Einladung ---------- */
-
-.invitation{
-
-    position:fixed;
-
-    inset:0;
-
-    background:#faf6f0;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:30px;
-
-}
-
-.paper{
-
-    width:min(90%,520px);
-
-    background:#fffdf9;
-
-    padding:45px 38px;
-
-    border-radius:12px;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.06);
-
-    border:1px solid rgba(160,170,180,.18);
-
-}
-
-.paper h1{
-
-    text-align:center;
-
-    margin-bottom:28px;
-
-    color:#607d9d;
-
-    font-size:2.3rem;
-
-    font-weight:600;
-
-}
-
-.intro{
-
-    line-height:1.8;
-
-    font-size:1rem;
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-}
-
-.details{
-
-    display:grid;
-
-    gap:14px;
-
-    margin:35px 0;
-
-    text-align:center;
-
-}
-
-.details p{
-
-    margin:0;
-
-}
-
-.choices{
-
-    display:grid;
-
-    gap:12px;
-
-    margin-top:35px;
-
-}
-
-.yes{
-
-    background:#a8bfd8;
-
-}
-
-.yes:hover{
-
-    background:#93b2d3;
-
-}
-
-.no{
+.secondary{
 
     background:#d8d2c8;
 
@@ -252,19 +175,117 @@ button:hover{
 
 }
 
-.no:hover{
 
-    background:#cbc3b7;
+
+
+
+
+/* Eingabefelder */
+
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd3ca;
+
+    background:#fffaf5;
+
+    font-family:"Lora",serif;
+
+    font-size:1rem;
+
+    margin-bottom:20px;
 
 }
+
+
+
+textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+
+
+/* Geschenk Notizzettel */
+
+
+.gift-grid{
+
+    display:grid;
+
+    gap:15px;
+
+    margin:30px 0;
+
+}
+
+
+
+.gift{
+
+    background:#eef2f5;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    transform:rotate(-1deg);
+
+    box-shadow:0 5px 12px rgba(0,0,0,.05);
+
+}
+
+
+.gift:nth-child(even){
+
+    transform:rotate(1deg);
+
+}
+
+
+
+
 
 .hidden{
 
-    display:none !important;
+    display:none!important;
 
 }
 
+
+
+
+
+
+
 @media(max-width:600px){
+
+
+    .envelope-wrapper{
+
+        width:230px;
+
+    }
+
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
 
     .paper{
 
@@ -272,28 +293,5 @@ button:hover{
 
     }
 
-    .paper h1{
-
-        font-size:2.2rem;
-
-    }
-
-}
-
-.choices button{
-
-    padding:16px;
-
-    border-radius:12px;
-
-    font-size:1rem;
-
-    transition:.3s;
-
-}
-
-.choices button:hover{
-
-    transform:translateY(-2px);
 
 }
