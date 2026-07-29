@@ -18,7 +18,20 @@ function showPage(pageId) {
         page.classList.remove("active");
     });
 
-    document.getElementById(pageId).classList.add("active");
+
+    const nextPage = document.getElementById(pageId);
+
+    if(nextPage){
+        nextPage.classList.add("active");
+    }
+
+}
+
+
+
+function openInvitation(){
+
+    showPage("invitation");
 
 }
 
