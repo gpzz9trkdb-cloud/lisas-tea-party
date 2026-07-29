@@ -428,3 +428,11 @@ main{
     display:flex;
 
 }
+
+/* Karten etwas höher positionieren */
+
+.page.active .paper{
+
+    transform: translateY(-40px);
+
+}
