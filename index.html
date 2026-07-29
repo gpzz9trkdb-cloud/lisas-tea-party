@@ -12,7 +12,7 @@
 
 <main class="hero">
 
-    <div class="envelope-wrapper">
+    <div class="envelope-wrapper" id="startScreen">
 
         <div class="letter"></div>
 
@@ -24,16 +24,54 @@
 
     </div>
 
-    <h1>
-        Für dich ist eine Einladung angekommen. :)
-    </h1>
-
     <button id="openButton">
         💌 Einladung öffnen
     </button>
 
 </main>
 
+
+<section class="invitation hidden" id="invitation">
+
+    <div class="paper">
+
+        <h1>You're invited</h1>
+
+        <p class="intro">
+
+            Liebe Anna,
+
+            <br><br>
+
+            ich möchte meinen Geburtstag mit meinen Lieblingsmenschen verbringen und würde mich riesig freuen, wenn du dabei bist. 🤍
+
+        </p>
+
+        <div class="details">
+
+            <p><strong>📅 Datum</strong><br>05. September 2026</p>
+
+            <p><strong>🕚 Uhrzeit</strong><br>ab 11:00 Uhr</p>
+
+            <p><strong>📍 Ort</strong><br>Bei mir zu Hause</p>
+
+        </div>
+
+        <div class="choices">
+
+            <button class="yes">
+                🌸 Ich komme gerne
+            </button>
+
+            <button class="no">
+                🤍 Leider kann ich nicht
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 <script src="script.js"></script>
 
 </body>
