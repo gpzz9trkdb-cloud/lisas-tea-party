@@ -141,3 +141,131 @@ button:hover{
     }
 
 }
+
+/* ---------- Einladung ---------- */
+
+.invitation{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#faf6f0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.paper{
+
+    width:min(92%,650px);
+
+    background:#fffdf9;
+
+    border-radius:18px;
+
+    padding:50px 40px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.paper h1{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#607d9d;
+
+    font-size:3rem;
+
+}
+
+.intro{
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+    margin-bottom:35px;
+
+}
+
+.details{
+
+    display:grid;
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.details p{
+
+    margin:0;
+
+}
+
+.choices{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+.yes{
+
+    background:#a8bfd8;
+
+}
+
+.yes:hover{
+
+    background:#93b2d3;
+
+}
+
+.no{
+
+    background:#d8d2c8;
+
+    color:#5d4b45;
+
+}
+
+.no:hover{
+
+    background:#cbc3b7;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+@media(max-width:600px){
+
+    .paper{
+
+        padding:35px 25px;
+
+    }
+
+    .paper h1{
+
+        font-size:2.2rem;
+
+    }
+
+}
