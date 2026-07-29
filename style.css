@@ -63,12 +63,14 @@ main{
 
 }
 
-
 .page.active{
 
     display:flex;
 
+    flex-direction:column;
+
 }
+
 
 /* Startseite */
 
