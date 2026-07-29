@@ -1,3 +1,5 @@
+console.log("Script läuft");
+
 // Supabase Verbindung
 const SUPABASE_URL = https://arxauuilfkynrzitwtet.supabase.co;
 const SUPABASE_KEY = sb_publishable_CPHlclXrIvEaHKQjFBXT3w_Ws2FaWmF;
