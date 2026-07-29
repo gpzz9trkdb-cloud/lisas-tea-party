@@ -1,78 +1,337 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisas Tea Party 🌸</title>
+    <title>Lisas Geburtstag</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-<main class="hero">
 
-    <div class="envelope-wrapper" id="startScreen">
+<main>
+
+
+<!-- START / UMSCHLAG -->
+
+<section id="start" class="page active">
+
+    <div class="envelope-wrapper">
 
         <div class="letter"></div>
 
-        <img
-            src="assets/illustrations/IMG_1650.png"
-            alt="Briefumschlag"
-            class="envelope"
-        >
+        <img 
+        src="assets/illustrations/IMG_1650.png"
+        class="envelope"
+        alt="Briefumschlag">
 
     </div>
 
-    <button id="openButton">
+
+    <h1>
+        Für dich ist Post angekommen :)
+    </h1>
+
+
+    <button onclick="openInvitation()">
         💌 Öffnen
     </button>
+
+
+</section>
+
+
+
+
+<!-- EINLADUNG -->
+
+<section id="invitation" class="page">
+
+
+<div class="paper">
+
+
+<h1>
+    Hallo Maus <3
+</h1>
+
+
+<p>
+Ich würde mich riesig freuen, meinen Geburtstag mit dir zu verbringen.
+<br><br>
+
+Dich erwartet ein schöner Tag mit leckerem Essen, guten Gesprächen
+und einer kleinen kreativen Überraschung :)
+</p>
+
+
+
+<div class="details">
+
+<p>
+📅 <b>Datum</b><br>
+05. September 2026
+</p>
+
+
+<p>
+🕒 <b>Uhrzeit</b><br>
+ab 11:00 Uhr
+</p>
+
+
+<p>
+📍 <b>Ort</b><br>
+Bei mir zu Hause
+</p>
+
+
+</div>
+
+
+
+<button onclick="showPage('yes')">
+Ich bin dabei!
+</button>
+
+
+<button class="secondary" onclick="showPage('no')">
+Leider kann ich nicht dabei sein
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ZUSAGE NAME -->
+
+<section id="yes" class="page">
+
+<div class="paper">
+
+
+<h1>
+Wer hat meinen Brief geöffnet? :)
+</h1>
+
+
+<p>
+Verrate mir noch kurz deinen Namen.
+</p>
+
+
+<input 
+id="nameYes"
+placeholder="Dein Name">
+
+
+<button onclick="showPage('drink')">
+Weiter
+</button>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- GETRÄNKE -->
+
+<section id="drink" class="page">
+
+<div class="paper">
+
+
+<h1>
+Fast geschafft :)
+</h1>
+
+
+<p>
+Verrate mir doch gerne ob du einen Getränkewunsch hast.
+</p>
+
+
+<textarea
+id="drinkWish"
+placeholder="Dein Getränkewunsch...">
+</textarea>
+
+
+<button onclick="showPage('gifts')">
+Weiter
+</button>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- GESCHENKIDEEN -->
+
+<section id="gifts" class="page">
+
+<div class="paper">
+
+
+<h1>
+Du hast nach Geschenkideen gefragt? &lt;3
+</h1>
+
+
+<p>
+Am meisten freue ich mich natürlich darüber,
+dass du dabei bist. Falls du trotzdem etwas schenken möchtest,
+würden mich diese Dinge besonders freuen:
+</p>
+
+
+
+<div class="gift-grid">
+
+
+<div class="gift">
+IKEA Gutschein
+</div>
+
+
+<div class="gift">
+weiße Schokolade
+</div>
+
+
+<div class="gift">
+Rosen oder alle Blumen mit Altrosa
+</div>
+
+
+<div class="gift">
+Ein kleiner Zuschuss für meine Reisekasse
+</div>
+
+
+</div>
+
+
+
+<button onclick="showPage('thanks')">
+Weiter
+</button>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ABSAGE -->
+
+<section id="no" class="page">
+
+<div class="paper">
+
+
+<h1>
+Wie schade :(
+</h1>
+
+
+<p>
+Ich hätte mich sehr gefreut, dich dabei zu haben.
+<br><br>
+
+Vielleicht sehen wir uns ganz bald wieder. <3
+</p>
+
+
+<input
+id="nameNo"
+placeholder="Dein Name">
+
+
+<button onclick="showPage('thanks')">
+Weiter
+</button>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- DANKE -->
+
+<section id="thanks" class="page">
+
+<div class="paper">
+
+
+<h1>
+Danke <3
+</h1>
+
+
+<p>
+Danke, dass du dir kurz Zeit genommen hast.
+
+<br><br>
+
+Ich freue mich schon riesig darauf,
+meinen Geburtstag mit euch zu verbringen.
+
+<br><br>
+
+Zieh gerne etwas an, das auch einen kleinen Farbklecks verzeihen würde –
+wir werden an dem Tag nämlich auch ein bisschen kreativ. 🎨
+
+<br><br>
+
+Bis bald, deine Lisa <3
+</p>
+
+
+</div>
+
+</section>
+
+
 
 </main>
 
 
-<section class="invitation hidden" id="invitation">
 
-    <div class="paper">
-
-        <h1>Da ist eine Einladung für dich angekommen...</h1>
-
-        <p class="intro">
-
-            Hallo Maus,
-
-            <br><br>
-
-            ich möchte meinen Geburtstag mit meinen Lieblingsmenschen verbringen und würde mich riesig freuen, wenn du dabei bist <3
-
-        </p>
-
-        <div class="details">
-
-            <p><strong>📅 Datum</strong><br>05. September 2026</p>
-
-            <p><strong>🕚 Uhrzeit</strong><br>ab 11:00 Uhr</p>
-
-            <p><strong>📍 Ort</strong><br>Bei mir zu Hause</p>
-
-        </div>
-
-        <div class="choices">
-
-            <button class="yes">
-                Ich bin gerne dabei
-            </button>
-
-            <button class="no">
-                Leider muss ich diesmal absagen
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
