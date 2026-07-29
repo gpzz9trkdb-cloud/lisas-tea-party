@@ -429,10 +429,10 @@ main{
 
 }
 
-/* Karten etwas höher positionieren */
+.paper{
 
-.page.active .paper{
+    position:relative;
 
-    transform: translateY(-60px);
+    top:-40px;
 
 }
