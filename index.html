@@ -1,381 +1,330 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisas Geburtstag</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Lisas Geburtstag</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 </head>
-
 
 <body>
 
-
-<main>
-
-
-<!-- START / UMSCHLAG -->
+<!-- ================= START ================= -->
 
 <section id="start" class="page active">
 
-    <div class="envelope-wrapper">
+    <div class="hero">
 
-        <div class="letter"></div>
+        <div class="envelope-wrapper">
 
-        <img 
-        src="assets/illustrations/IMG_1650.png"
-        class="envelope"
-        alt="Briefumschlag">
+            <div class="letter"></div>
+
+            <img
+                src="assets/illustrations/IMG_1650.png"
+                class="envelope"
+                alt="Briefumschlag">
+
+        </div>
+
+        <h1>Für dich ist Post angekommen :)</h1>
+
+        <button onclick="openInvitation()">
+            💌 Öffnen
+        </button>
 
     </div>
 
-
-    <h1>
-        Für dich ist Post angekommen :)
-    </h1>
-
-
-    <button onclick="openInvitation()">
-        💌 Öffnen
-    </button>
-
-
 </section>
 
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js"></script>
-
-</body>
-</html>
-
-
-
-
-<!-- EINLADUNG -->
+<!-- ================= EINLADUNG ================= -->
 
 <section id="invitation" class="page">
 
-
 <div class="paper">
 
+<h1>Hallo Maus &lt;3</h1>
 
-<h1>
-    Hallo Maus <3
-</h1>
+<p class="intro">
 
+Ich würde mich riesig freuen,
+meinen Geburtstag mit dir zu verbringen.
 
-<p>
-Ich würde mich riesig freuen, meinen Geburtstag mit dir zu verbringen.
 <br><br>
 
-Dich erwartet ein schöner Tag mit leckerem Essen, guten Gesprächen
-und einer kleinen kreativen Überraschung :)
+Dich erwartet win paar Snacks,
+gute Gespräche
+und eine kleine kreative Überraschung.
+
 </p>
-
-
 
 <div class="details">
 
-<p>
-📅 <b>Datum</b><br>
-05. September 2026
-</p>
+<p><strong>Datum</strong><br>05. September 2026</p>
 
+<p><strong>Uhrzeit</strong><br>11:00 Uhr</p>
 
-<p>
-🕒 <b>Uhrzeit</b><br>
-ab 11:00 Uhr
-</p>
-
-
-<p>
-📍 <b>Ort</b><br>
-Bei mir zu Hause
-</p>
-
+<p><strong>Ort</strong><br>Bei mir zu Hause</p>
 
 </div>
 
-
+<div class="choices">
 
 <button onclick="showPage('yes')">
+
 Ich bin dabei!
+
 </button>
 
+<button class="secondary"
 
-<button class="secondary" onclick="showPage('no')">
-Leider kann ich nicht dabei sein
+onclick="showPage('no')">
+
+Leider kann ich nicht :(
+
 </button>
-
-
 
 </div>
 
+</div>
 
 </section>
 
-
-
-
-
-<!-- ZUSAGE NAME -->
+<!-- ================= ZUSAGE ================= -->
 
 <section id="yes" class="page">
 
 <div class="paper">
 
-
-<h1>
-Wer hat meinen Brief geöffnet? :)
-</h1>
-
+<h1>Wer hat meinen Brief geöffnet? :)</h1>
 
 <p>
+
 Verrate mir noch kurz deinen Namen.
+
 </p>
 
-
-<input 
+<input
 id="nameYes"
 placeholder="Dein Name">
 
-
 <button onclick="showPage('drink')">
-Weiter
-</button>
 
+Weiter
+
+</button>
 
 </div>
 
 </section>
 
-
-
-
-
-<!-- GETRÄNKE -->
+<!-- ================= GETRÄNKE ================= -->
 
 <section id="drink" class="page">
 
 <div class="paper">
 
-
-<h1>
-Fast geschafft :)
-</h1>
-
+<h1>Fast geschafft :)</h1>
 
 <p>
-Verrate mir doch gerne ob du einen Getränkewunsch hast.
+
+Hast du einen Getränkewunsch?
+
 </p>
 
-
 <textarea
+
 id="drinkWish"
-placeholder="Dein Getränkewunsch...">
+
+placeholder="Zum Beispiel Cola, Aperol, Eistee...">
+
 </textarea>
 
-
 <button onclick="showPage('gifts')">
-Weiter
-</button>
 
+Weiter
+
+</button>
 
 </div>
 
 </section>
 
-
-
-
-
-
-<!-- GESCHENKIDEEN -->
+<!-- ================= GESCHENKE ================= -->
 
 <section id="gifts" class="page">
 
 <div class="paper">
 
-
 <h1>
+
 Du hast nach Geschenkideen gefragt? &lt;3
+
 </h1>
 
-
 <p>
-Am meisten freue ich mich natürlich darüber,
-dass du dabei bist. Falls du trotzdem etwas schenken möchtest,
-würden mich diese Dinge besonders freuen:
+
+Am meisten freue ich mich natürlich,
+
+dass du dabei bist.
+
+Falls du trotzdem etwas schenken möchtest:
+
 </p>
-
-
 
 <div class="gift-grid">
 
-
 <div class="gift">
+
 IKEA Gutschein
+
 </div>
 
-
 <div class="gift">
+
 weiße Schokolade
-</div>
 
+</div>
 
 <div class="gift">
-Rosen oder alle Blumen mit Altrosa
-</div>
 
+Rosen oder Blumen in Altrosa
+
+</div>
 
 <div class="gift">
-Ein kleiner Zuschuss für meine Reisekasse
+
+ein kleiner Zuschuss
+
+für meine Reisekasse
+
 </div>
 
-
 </div>
 
+<button onclick="saveYes()">
 
+Fertig
 
-<button onclick="showPage('thanks')">
-Weiter
 </button>
-
 
 </div>
 
 </section>
 
-
-
-
-
-
-
-<!-- ABSAGE -->
+<!-- ================= ABSAGE ================= -->
 
 <section id="no" class="page">
 
 <div class="paper">
 
-
 <h1>
-Wie schade :(
+
+Schade :(
+
 </h1>
 
-
 <p>
-Ich hätte mich sehr gefreut, dich dabei zu haben.
-<br><br>
 
-Vielleicht sehen wir uns ganz bald wieder. <3
+Ich hätte mich sehr gefreut,
+
+dich dabei zu haben.
+
 </p>
 
-
 <input
+
 id="nameNo"
+
 placeholder="Dein Name">
 
+<button onclick="saveNo()">
 
-<button onclick="showPage('thanksNo')">
-Weiter
+Absenden
+
 </button>
-
 
 </div>
 
 </section>
 
-
-
-
-
-
-
-<!-- DANKE -->
+<!-- ================= DANKE ================= -->
 
 <section id="thanks" class="page">
 
 <div class="paper">
 
-
 <h1>
-Danke <3
+
+Danke &lt;3
+
 </h1>
 
-
 <p>
-Danke, dass du dir kurz Zeit genommen hast.
+
+Ich freue mich riesig
+
+auf einen schönen Tag mit dir.
 
 <br><br>
 
-Ich freue mich schon riesig darauf,
-meinen Geburtstag mit euch zu verbringen.
+Wir werden
+
+ein bisschen kreativ. :)
 
 <br><br>
 
-Zieh gerne etwas an, das auch einen kleinen Farbklecks verzeihen würde –
-wir werden an dem Tag nämlich auch ein bisschen kreativ. 🎨
+Bis bald,
 
-<br><br>
+deine Lisa
 
-Bis bald, deine Lisa <3
 </p>
-
 
 </div>
 
 </section>
 
-
-
-</main>
-
-
-
-<script src="script.js"></script>
-
-
-</body>
-
-</html>
+<!-- ================= ABSAGE DANKE ================= -->
 
 <section id="thanksNo" class="page">
 
 <div class="paper">
 
-
 <h1>
-Schade <3
-</h1>
 
+Schade &lt;3
+
+</h1>
 
 <p>
 
-Danke, dass du mir trotzdem Bescheid gegeben hast.
+Danke,
+
+dass du mir Bescheid gegeben hast.
 
 <br><br>
 
-Auch wenn du diesmal nicht dabei sein kannst,
-hoffe ich, dass wir uns ganz bald wiedersehen.
+Ich hoffe,
+
+wir sehen uns ganz bald wieder.
 
 <br><br>
 
-Ich werde an dich denken und vielleicht gibt es ja
-bei einer anderen Gelegenheit einen kleinen kreativen Moment zusammen. :)
+Bis bald,
 
-<br><br>
-
-Bis bald, deine Lisa <3
+Lisa <3
 
 </p>
-
 
 </div>
 
 </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
