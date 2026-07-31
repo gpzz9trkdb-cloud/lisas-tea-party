@@ -523,3 +523,45 @@ textarea{
     transform:rotate(10deg);
 
 }
+
+/* ===========================
+   HINTERGRUND
+=========================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-10;
+}
+
+.blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.35;
+}
+
+.blue{
+    width:420px;
+    height:420px;
+    background:#dce9f6;
+    top:-120px;
+    left:-120px;
+}
+
+.green{
+    width:380px;
+    height:380px;
+    background:#dfeadf;
+    bottom:-120px;
+    right:-100px;
+}
+
+.pink{
+    width:320px;
+    height:320px;
+    background:#f4e5eb;
+    top:40%;
+    left:55%;
+}
