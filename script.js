@@ -3,7 +3,7 @@
 // ==========================
 
 const SUPABASE_URL = "https://arxauuilfkynrzitwtet.supabase.co";
-const SUPABASE_KEY = "sb_publishable_Qa1edI4RjgcNNCDBsl4Piw_9rsLeFiQ";
+const SUPABASE_KEY = "DEIN_PUBLISHABLE_KEY";
 
 const supabaseClient = window.supabase.createClient(
     SUPABASE_URL,
@@ -14,12 +14,10 @@ const supabaseClient = window.supabase.createClient(
 // SEITEN WECHSELN
 // ==========================
 
-function showPage(pageId){
+function showPage(pageId) {
 
-    document.querySelectorAll(".page").forEach(page=>{
-
+    document.querySelectorAll(".page").forEach(page => {
         page.classList.remove("active");
-
     });
 
     document.getElementById(pageId).classList.add("active");
@@ -30,7 +28,7 @@ function showPage(pageId){
 // START
 // ==========================
 
-function openInvitation(){
+function openInvitation() {
 
     showPage("invitation");
 
@@ -40,75 +38,62 @@ function openInvitation(){
 // ZUSAGE SPEICHERN
 // ==========================
 
-async function saveYes(){
+async function saveYes() {
 
-    const name =
-        document.getElementById("nameYes").value.trim();
+    const name = document.getElementById("nameYes").value.trim();
+    const drink = document.getElementById("drinkWish").value.trim();
 
-    const drink =
-        document.getElementById("drinkWish").value.trim();
-
-    if(name===""){
-
+    if (name === "") {
         alert("Bitte gib deinen Namen ein :)");
         showPage("yes");
         return;
-
     }
 
-    const { error } =
-        await supabaseClient
+    const { error } = await supabaseClient
         .from("guests")
         .insert({
-
-            name:name,
-            attending:true,
-            drink:drink,
-            gift:null
-
+            name: name,
+            attending: true,
+            drink: drink
         });
 
     if (error) {
-    console.log(error);
-    alert(error.message);
-    return;
-}
+        console.log(error);
+        alert(error.message);
+        return;
+    }
 
-showPage("thanks");
+    showPage("thanks");
+
+}
 
 // ==========================
 // ABSAGE SPEICHERN
 // ==========================
 
-async function saveNo(){
+async function saveNo() {
 
-    const name =
-        document.getElementById("nameNo").value.trim();
+    const name = document.getElementById("nameNo").value.trim();
 
-    if(name===""){
-
+    if (name === "") {
         alert("Bitte gib deinen Namen ein :)");
         return;
-
     }
 
-    const { error } =
-        await supabaseClient
+    const { error } = await supabaseClient
         .from("guests")
         .insert({
-
-            name:name,
-            attending:false,
-            drink:null,
-            gift:null
-
+            name: name,
+            attending: false,
+            drink: null
         });
 
     if (error) {
-    console.log(error);
-    alert(error.message);
-    return;
-}
+        console.log(error);
+        alert(error.message);
+        return;
+    }
 
-showPage("thanksNo");
-    
+    showPage("thanksNo");
+
+}
