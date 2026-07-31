@@ -11,31 +11,23 @@ const supabaseClient = window.supabase.createClient(
 );
 
 // ==========================
-// SEITEN WECHSELN
+// SEITEN
 // ==========================
 
 function showPage(pageId) {
-
     document.querySelectorAll(".page").forEach(page => {
         page.classList.remove("active");
     });
 
     document.getElementById(pageId).classList.add("active");
-
 }
-
-// ==========================
-// START
-// ==========================
 
 function openInvitation() {
-
     showPage("invitation");
-
 }
 
 // ==========================
-// ZUSAGE SPEICHERN
+// ZUSAGE
 // ==========================
 
 async function saveYes() {
@@ -44,7 +36,7 @@ async function saveYes() {
     const drink = document.getElementById("drinkWish").value.trim();
 
     if (name === "") {
-        alert("Bitte gib deinen Namen ein :)");
+        alert("Bitte gib deinen Namen ein.");
         showPage("yes");
         return;
     }
@@ -64,11 +56,10 @@ async function saveYes() {
     }
 
     showPage("thanks");
-
 }
 
 // ==========================
-// ABSAGE SPEICHERN
+// ABSAGE
 // ==========================
 
 async function saveNo() {
@@ -76,7 +67,7 @@ async function saveNo() {
     const name = document.getElementById("nameNo").value.trim();
 
     if (name === "") {
-        alert("Bitte gib deinen Namen ein :)");
+        alert("Bitte gib deinen Namen ein.");
         return;
     }
 
@@ -84,8 +75,7 @@ async function saveNo() {
         .from("guests")
         .insert({
             name: name,
-            attending: false,
-            drink: null
+            attending: false
         });
 
     if (error) {
@@ -95,5 +85,4 @@ async function saveNo() {
     }
 
     showPage("thanksNo");
-
 }
