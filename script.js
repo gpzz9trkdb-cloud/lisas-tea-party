@@ -115,9 +115,5 @@ async function saveNo(){
     return;
 }
 
-    
+    showPage("thanks");
 
-
-    showPage("thanksNo");
-
-}
