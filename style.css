@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lora:wght@400;500&display=swap');
 
+:root{
+
+    --cream:#F7F4EE;
+    --paper:#FFFDF9;
+
+    --blue:#AFC4D6;
+    --blue-dark:#6E89A7;
+
+    --sage:#B8C8B6;
+    --yellow:#E8DFC2;
+
+    --rose:#D9C7CE;
+
+    --text:#5A4C46;
+
+    --shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
 *{
     margin:0;
     padding:0;
@@ -8,7 +27,7 @@
 
 body{
 
-    background:#f8f5ef;
+    background:var(--cream);
 
     font-family:"Lora",serif;
 
@@ -104,13 +123,13 @@ body{
 
     width:min(90%,420px);
 
-    background:#fffdf9;
+    background:var(--paper);
 
     padding:30px;
 
     border-radius:16px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:var(--shadow);
 
     border:1px solid #ebe5dd;
 
@@ -132,7 +151,7 @@ body{
 
     font-size:2rem;
 
-    color:#6d86a6;
+    color:var(--blue-dark);
 
     margin-bottom:20px;
 
@@ -178,7 +197,7 @@ button{
 
     margin-top:12px;
 
-    background:#aebfd8;
+    background:var(--blue);
 
     color:white;
 
@@ -200,7 +219,7 @@ button:hover{
 
 .secondary{
 
-    background:#d9d3ca;
+    background:var(--sage);
 
     color:#5d4b45;
 
@@ -251,31 +270,23 @@ textarea{
 
 .gift{
 
-    background:#eef3f8;
+    background:var(--paper);
 
-    border-radius:10px;
+    border-left:6px solid var(--blue);
 
-    padding:16px;
+    padding:18px;
 
-    box-shadow:0 4px 10px rgba(0,0,0,.05);
+    border-radius:12px;
 
-}
+    box-shadow:0 8px 16px rgba(0,0,0,.05);
 
-.gift:nth-child(2){
-
-    background:#f5f1e8;
+    transition:.25s;
 
 }
 
-.gift:nth-child(3){
+.gift:hover{
 
-    background:#eef6ef;
-
-}
-
-.gift:nth-child(4){
-
-    background:#f4eef8;
+    transform:translateY(-4px);
 
 }
 
