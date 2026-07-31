@@ -109,16 +109,14 @@ async function saveNo(){
             gift:null
 
         });
+    if (error) {
+    console.log(error);
+    alert(error.message);
+    return;
+}
 
-    if(error){
+    
 
-        console.error(error);
-
-        alert("Fehler beim Speichern.");
-
-        return;
-
-    }
 
     showPage("thanksNo");
 
