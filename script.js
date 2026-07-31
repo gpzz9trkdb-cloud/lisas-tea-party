@@ -68,19 +68,13 @@ async function saveYes(){
 
         });
 
-    if(error){
-
-        console.error(error);
-
-        alert("Fehler beim Speichern.");
-
-        return;
-
-    }
-
-    showPage("thanks");
-
+    if (error) {
+    console.log(error);
+    alert(error.message);
+    return;
 }
+
+showPage("thanks");
 
 // ==========================
 // ABSAGE SPEICHERN
@@ -109,11 +103,12 @@ async function saveNo(){
             gift:null
 
         });
+
     if (error) {
     console.log(error);
     alert(error.message);
     return;
 }
 
-    showPage("thanks");
-
+showPage("thanksNo");
+    
