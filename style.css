@@ -25,15 +25,33 @@
     box-sizing:border-box;
 }
 
-body{
+.paper{
 
-    background:var(--cream);
+    width:min(90%,430px);
 
-    font-family:"Lora",serif;
+    background:rgba(255,253,249,.97);
 
-    color:#5d4b45;
+    backdrop-filter:blur(4px);
 
-    overflow:hidden;
+    padding:38px 34px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+        0 20px 45px rgba(70,70,70,.08),
+        0 2px 8px rgba(0,0,0,.03);
+
+    text-align:center;
+
+    position:relative;
+
+    top:-30px;
+
+    max-height:82vh;
+
+    overflow-y:auto;
 
 }
 
