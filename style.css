@@ -467,3 +467,15 @@ textarea{
     }
 
 }
+
+.paper img.decor{
+
+    position:absolute;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    opacity:.9;
+
+}
