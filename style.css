@@ -126,32 +126,27 @@ body{
 
 .paper{
 
-    width:min(90%,430px);
+    width:min(88%,390px);
 
-    padding:34px;
+    background:#fffdf9;
+
+    padding:22px 24px;
+
+    border-radius:16px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border:1px solid #ebe5dd;
 
     text-align:center;
 
     position:relative;
 
-    top:-35px;
+    top:-8px;
 
-    max-height:85vh;
+    max-height:92vh;
 
     overflow-y:auto;
-
-    border-radius:18px;
-
-    background:
-        radial-gradient(circle at top left,#fdfbf6 0%,#fbf8f2 45%,#f8f4ed 100%);
-
-    border:1px solid rgba(209,201,190,.7);
-
-    box-shadow:
-        0 22px 45px rgba(72,72,72,.10),
-        0 6px 14px rgba(0,0,0,.05);
-
-    animation:fadePaper .45s ease;
 
 }
 
@@ -198,7 +193,7 @@ body{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:2.6rem;
+    font-size:1.8rem;
 
     font-weight:600;
 
@@ -206,7 +201,7 @@ body{
 
     line-height:1;
 
-    margin-bottom:22px;
+    margin-bottom:14px;
 
     letter-spacing:.5px;
 
@@ -216,11 +211,11 @@ body{
 
     font-size:1.08rem;
 
-    line-height:1.95;
+    line-height:1.55;
 
     color:#6d625d;
 
-    margin-bottom:22px;
+    margin-bottom:16px;
 
 }
 
@@ -228,13 +223,13 @@ body{
 
 .details{
 
-    margin:28px 0;
+    margin:18px 0;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:18px;
+    gap:12px;
 
 }
 
@@ -276,9 +271,9 @@ button{
 
     border-radius:14px;
 
-    padding:16px;
+    padding:12px;
 
-    margin-top:14px;
+    margin-top:10px;
 
     background:#b7cadb;
 
@@ -286,7 +281,7 @@ button{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:1.2rem;
+    font-size:1.1rem;
 
     cursor:pointer;
 
