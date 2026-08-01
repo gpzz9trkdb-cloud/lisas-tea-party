@@ -22,8 +22,19 @@ function showPage(pageId) {
     document.getElementById(pageId).classList.add("active");
 }
 
-function openInvitation() {
-    showPage("invitation");
+function openInvitation(){
+
+    const letter = document.querySelector(".letter");
+
+    letter.style.transform =
+        "translateX(-50%) translateY(-45px)";
+
+    setTimeout(()=>{
+
+        showPage("invitation");
+
+    },600);
+
 }
 
 // ==========================
