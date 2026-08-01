@@ -565,3 +565,87 @@ textarea{
     }
 
 }
+
+/* ===========================
+   HERZEN
+=========================== */
+
+.heart{
+
+    position:fixed;
+
+    font-size:22px;
+
+    pointer-events:none;
+
+    animation:heartFloat 2.5s linear forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes heartFloat{
+
+    from{
+
+        opacity:1;
+        transform:translateY(0) scale(1);
+
+    }
+
+    to{
+
+        opacity:0;
+        transform:translateY(-180px) scale(1.6);
+
+    }
+
+}
+
+/* ===========================
+   BLÜTEN
+=========================== */
+
+.petal{
+
+    position:fixed;
+
+    top:-40px;
+
+    pointer-events:none;
+
+    animation:fall linear forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:
+        translateY(-30px)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+        translateY(110vh)
+        rotate(360deg);
+
+        opacity:.95;
+
+    }
+
+}
