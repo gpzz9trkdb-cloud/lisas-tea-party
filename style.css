@@ -698,7 +698,7 @@ textarea{
 
     position:absolute;
 
-    opacity:.18;
+    opacity:.55;
 
     user-select:none;
 
@@ -735,3 +735,24 @@ textarea{
     transform:rotate(10deg);
 
 }
+
+.stamp1{ width:55px; }
+.stamp2{ width:60px; }
+
+.bow1{ width:45px; }
+.bow2{ width:40px; }
+
+.butterfly1{ width:42px; }
+.butterfly2{ width:36px; }
+.butterfly3{ width:40px; }
+
+.leaves1{ width:55px; }
+.leaves2{ width:50px; }
+
+.flower1{ width:55px; }
+
+.cup1{ width:55px; }
+
+.pot1{ width:60px; }
+
+.cake1{ width:50px; }
