@@ -66,7 +66,18 @@ async function saveYes() {
         return;
     }
 
+    createHearts();
+
+setTimeout(()=>{
+
     showPage("thanks");
+
+    createPetals();
+
+},900);
+
+return;
+  
 }
 
 // ==========================
@@ -95,5 +106,85 @@ async function saveNo() {
         return;
     }
 
-    showPage("thanksNo");
+    createPetals();
+
+showPage("thanksNo");
+}
+
+// ==========================
+// HERZEN
+// ==========================
+
+function createHearts(){
+
+    for(let i=0;i<18;i++){
+
+        const heart=document.createElement("div");
+
+        heart.className="heart";
+
+        heart.innerHTML="💗";
+
+        heart.style.left=Math.random()*100+"vw";
+
+        heart.style.bottom="0px";
+
+        heart.style.animationDelay=(Math.random()*0.6)+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+
+            heart.remove();
+
+        },2600);
+
+    }
+
+}
+
+// ==========================
+// BLÜTEN
+// ==========================
+
+function createPetals(){
+
+    const colors=[
+        "#fffdf8",
+        "#f8edf1",
+        "#f6f2e8"
+    ];
+
+    for(let i=0;i<28;i++){
+
+        const petal=document.createElement("div");
+
+        petal.className="petal";
+
+        petal.innerHTML="❀";
+
+        petal.style.color=
+            colors[Math.floor(Math.random()*colors.length)];
+
+        petal.style.left=Math.random()*100+"vw";
+
+        petal.style.fontSize=
+            (14+Math.random()*14)+"px";
+
+        petal.style.animationDuration=
+            (5+Math.random()*4)+"s";
+
+        petal.style.animationDelay=
+            (Math.random()*2)+"s";
+
+        document.body.appendChild(petal);
+
+        setTimeout(()=>{
+
+            petal.remove();
+
+        },9000);
+
+    }
+
 }
