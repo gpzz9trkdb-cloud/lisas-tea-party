@@ -117,6 +117,7 @@ showPage("thanksNo");
 
 function createHearts(){
 
+    alert("Herzen werden gestartet!");
     for(let i=0;i<18;i++){
 
         const heart=document.createElement("div");
