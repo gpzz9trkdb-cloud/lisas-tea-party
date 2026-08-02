@@ -27,8 +27,25 @@
 
 body{
 
-    background:
-        radial-gradient(circle at top,#fcfaf5,#f5f4ef 65%,#efede8);
+    background-color:#f8f5ef;
+
+    background-image:
+
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,.18) 0px,
+            rgba(255,255,255,.18) 1px,
+            transparent 1px,
+            transparent 18px
+        ),
+
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.12) 0px,
+            rgba(255,255,255,.12) 1px,
+            transparent 1px,
+            transparent 18px
+        );
 
     font-family:"Lora",serif;
 
