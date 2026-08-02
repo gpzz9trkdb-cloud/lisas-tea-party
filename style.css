@@ -923,3 +923,51 @@ textarea{
     right:35%;
     width:32px !important;
 }
+
+/* =========================
+   LETZTE DOODLE KORREKTUR
+========================= */
+
+
+/* große Blume */
+.flower1{
+    top:65%;
+    left:18%;
+
+    width:36px !important;
+
+    transform:rotate(-15deg);
+}
+
+
+/* Schleife aus der Ecke holen */
+.bow1{
+    top:18%;
+    right:15%;
+
+    width:40px !important;
+
+    transform:rotate(25deg);
+}
+
+
+/* Blatt aus der Ecke holen */
+.leaves2{
+    top:48%;
+    right:28%;
+
+    width:42px !important;
+
+    transform:rotate(35deg);
+}
+
+
+/* Schmetterling aus der Ecke holen */
+.butterfly2{
+    top:30%;
+    left:72%;
+
+    width:32px !important;
+
+    transform:rotate(35deg);
+}
