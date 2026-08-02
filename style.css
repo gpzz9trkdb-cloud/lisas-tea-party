@@ -689,7 +689,9 @@ textarea{
 
     font-size:40px;
 
-    z-index:99999;
+    z-index:
+    
+ 99999;
 
 }
 
@@ -709,181 +711,288 @@ textarea{
 
 }
 
+
 .doodle{
 
     position:absolute;
 
-    opacity:.92;
+    opacity:.9;
 
     user-select:none;
 
 }
 
-.page{
 
-    z-index:1;
-
-}
-
-/* ---------------- BRIEFMARKEN ---------------- */
+/* ================= BRIEFMARKEN ================= */
 
 .stamp1{
-    top:3%;
-    left:2%;
+
+    top:6%;
+    left:4%;
+
     width:58px;
+
     transform:rotate(-18deg);
+
 }
+
 
 .stamp2{
-    bottom:3%;
-    right:-2%;
-    width:66px;
-    transform:rotate(22deg);
+
+    top:72%;
+    right:5%;
+
+    width:64px;
+
+    transform:rotate(18deg);
+
 }
+
 
 .stamp3{
-    top:60%;
-    left:78%;
-    width:50px;
+
+    top:44%;
+    left:82%;
+
+    width:48px;
+
     transform:rotate(-28deg);
+
 }
 
-/* ---------------- SCHLEIFEN ---------------- */
+
+
+/* ================= SCHLEIFEN ================= */
 
 .bow1{
-    top:16%;
-    right:10%;
-    width:40px;
-    transform:rotate(32deg);
+
+    top:18%;
+    right:12%;
+
+    width:42px;
+
+    transform:rotate(30deg);
+
 }
+
 
 .bow2{
-    bottom:12%;
-    left:6%;
-    width:38px;
-    transform:rotate(-42deg);
+
+    top:78%;
+    left:8%;
+
+    width:40px;
+
+    transform:rotate(-25deg);
+
 }
+
 
 .bow3{
-    top:42%;
-    left:48%;
+
+    top:40%;
+    left:12%;
+
     width:34px;
-    transform:rotate(68deg);
+
+    transform:rotate(55deg);
+
 }
 
-/* ---------------- SCHMETTERLINGE ---------------- */
+
+
+/* ================= SCHMETTERLINGE ================= */
 
 .butterfly1{
-    top:30%;
-    left:4%;
+
+    top:32%;
+    left:5%;
+
     width:36px;
-    transform:rotate(-18deg);
+
+    transform:rotate(-20deg);
+
 }
+
 
 .butterfly2{
-    top:68%;
-    right:18%;
-    width:34px;
-    transform:rotate(46deg);
+
+    top:22%;
+    left:70%;
+
+    width:32px;
+
+    transform:rotate(40deg);
+
 }
+
 
 .butterfly3{
-    bottom:8%;
-    left:52%;
+
+    top:84%;
+    left:55%;
+
     width:34px;
-    transform:rotate(-58deg);
+
+    transform:rotate(-15deg);
+
 }
+
 
 .butterfly4{
-    top:22%;
-    left:72%;
+
+    top:62%;
+    right:18%;
+
     width:30px;
-    transform:rotate(86deg);
+
+    transform:rotate(70deg);
+
 }
 
-/* ---------------- BLÄTTER ---------------- */
+
+
+/* ================= BLÄTTER ================= */
 
 .leaves1{
-    top:10%;
-    left:46%;
+
+    top:12%;
+    left:45%;
+
     width:52px;
-    transform:rotate(-24deg);
+
+    transform:rotate(-15deg);
+
 }
+
 
 .leaves2{
-    bottom:18%;
+
+    top:52%;
     right:30%;
-    width:46px;
-    transform:rotate(62deg);
+
+    width:48px;
+
+    transform:rotate(40deg);
+
 }
+
 
 .leaves3{
+
     top:58%;
-    left:2%;
+    left:4%;
+
     width:44px;
-    transform:rotate(-36deg);
+
+    transform:rotate(-35deg);
+
 }
+
 
 .leaves4{
-    bottom:3%;
-    left:36%;
+
+    top:82%;
+    left:35%;
+
     width:48px;
-    transform:rotate(28deg);
+
+    transform:rotate(25deg);
+
 }
 
-/* ---------------- BLUMEN ---------------- */
+
+
+/* ================= BLUME / LÖWENZAHN ================= */
 
 .flower1{
-    top:76%;
-    left:16%;
-    width:34px;
-    transform:rotate(-18deg);
+
+    top:8%;
+    left:58%;
+
+    width:40px;
+
+    transform:rotate(15deg);
+
 }
+
 
 .flower2{
-    bottom:24%;
-    right:8%;
+
+    top:74%;
+    left:25%;
+
     width:36px;
-    transform:rotate(38deg);
+
+    transform:rotate(-20deg);
+
 }
 
-/* ---------------- TASSEN ---------------- */
+
+
+/* ================= TASSEN ================= */
 
 .cup1{
-    bottom:6%;
-    left:24%;
-    width:38px;
-    transform:rotate(-18deg);
+
+    top:48%;
+    right:8%;
+
+    width:42px;
+
+    transform:rotate(20deg);
+
 }
+
 
 .cup2{
-    top:52%;
-    right:4%;
-    width:36px;
-    transform:rotate(24deg);
+
+    top:66%;
+    left:68%;
+
+    width:38px;
+
+    transform:rotate(-25deg);
+
 }
 
-/* ---------------- TEEKANNE ---------------- */
+
+
+/* ================= TEEKANNE ================= */
 
 .pot1{
-    bottom:16%;
-    left:56%;
-    width:44px;
-    transform:rotate(14deg);
+
+    top:34%;
+    left:42%;
+
+    width:52px;
+
+    transform:rotate(12deg);
+
 }
 
-/* ---------------- KUCHEN ---------------- */
+
+
+/* ================= KUCHEN ================= */
 
 .cake1{
-    top:6%;
-    left:58%;
-    width:30px;
-    transform:rotate(18deg);
+
+    top:10%;
+    left:30%;
+
+    width:34px;
+
+    transform:rotate(-18deg);
+
 }
 
+
 .cake2{
-    top:46%;
-    right:34%;
-    width:34px;
-    transform:rotate(-32deg);
+
+    top:56%;
+    right:38%;
+
+    width:32px;
+
+    transform:rotate(25deg);
+
 }
