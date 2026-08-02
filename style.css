@@ -695,304 +695,154 @@ textarea{
 
 }
 
-/* ================= HINTERGRUND DOODLES ================= */
+/* ================= HINTERGRUND DOODLES MUSTER ================= */
 
 .background-doodles{
-
     position:fixed;
-
     inset:0;
-
     pointer-events:none;
-
     overflow:hidden;
-
     z-index:0;
-
 }
-
 
 .doodle{
-
     position:absolute;
-
     opacity:.9;
-
-    user-select:none;
-
 }
 
 
-/* ================= BRIEFMARKEN ================= */
+/* Reihe oben */
 
 .stamp1{
-
     top:6%;
-    left:4%;
-
-    width:58px;
-
-    transform:rotate(-18deg);
-
-}
-
-
-.stamp2{
-
-    top:72%;
-    right:5%;
-
-    width:64px;
-
-    transform:rotate(18deg);
-
-}
-
-
-.stamp3{
-
-    top:44%;
-    left:82%;
-
-    width:48px;
-
-    transform:rotate(-28deg);
-
-}
-
-
-
-/* ================= SCHLEIFEN ================= */
-
-.bow1{
-
-    top:18%;
-    right:12%;
-
-    width:42px;
-
-    transform:rotate(30deg);
-
-}
-
-
-.bow2{
-
-    top:78%;
     left:8%;
-
-    width:40px;
-
-    transform:rotate(-25deg);
-
-}
-
-
-.bow3{
-
-    top:40%;
-    left:12%;
-
-    width:34px;
-
-    transform:rotate(55deg);
-
-}
-
-
-
-/* ================= SCHMETTERLINGE ================= */
-
-.butterfly1{
-
-    top:32%;
-    left:5%;
-
-    width:36px;
-
-    transform:rotate(-20deg);
-
-}
-
-
-.butterfly2{
-
-    top:22%;
-    left:70%;
-
-    width:32px;
-
-    transform:rotate(40deg);
-
-}
-
-
-.butterfly3{
-
-    top:84%;
-    left:55%;
-
-    width:34px;
-
+    width:55px;
     transform:rotate(-15deg);
-
 }
-
-
-.butterfly4{
-
-    top:62%;
-    right:18%;
-
-    width:30px;
-
-    transform:rotate(70deg);
-
-}
-
-
-
-/* ================= BLÄTTER ================= */
 
 .leaves1{
-
-    top:12%;
-    left:45%;
-
-    width:52px;
-
-    transform:rotate(-15deg);
-
-}
-
-
-.leaves2{
-
-    top:52%;
-    right:30%;
-
-    width:48px;
-
-    transform:rotate(40deg);
-
-}
-
-
-.leaves3{
-
-    top:58%;
-    left:4%;
-
-    width:44px;
-
-    transform:rotate(-35deg);
-
-}
-
-
-.leaves4{
-
-    top:82%;
-    left:35%;
-
-    width:48px;
-
-    transform:rotate(25deg);
-
-}
-
-
-
-/* ================= BLUME / LÖWENZAHN ================= */
-
-.flower1{
-
-    top:8%;
-    left:58%;
-
-    width:40px;
-
-    transform:rotate(15deg);
-
-}
-
-
-.flower2{
-
-    top:74%;
-    left:25%;
-
-    width:36px;
-
-    transform:rotate(-20deg);
-
-}
-
-
-
-/* ================= TASSEN ================= */
-
-.cup1{
-
-    top:48%;
-    right:8%;
-
-    width:42px;
-
-    transform:rotate(20deg);
-
-}
-
-
-.cup2{
-
-    top:66%;
-    left:68%;
-
-    width:38px;
-
-    transform:rotate(-25deg);
-
-}
-
-
-
-/* ================= TEEKANNE ================= */
-
-.pot1{
-
-    top:34%;
+    top:10%;
     left:42%;
+    width:48px;
+    transform:rotate(20deg);
+}
 
-    width:52px;
-
-    transform:rotate(12deg);
-
+.bow1{
+    top:8%;
+    right:10%;
+    width:42px;
+    transform:rotate(18deg);
 }
 
 
+/* zweite Reihe */
 
-/* ================= KUCHEN ================= */
+.butterfly1{
+    top:28%;
+    left:12%;
+    width:35px;
+    transform:rotate(-20deg);
+}
 
 .cake1{
-
-    top:10%;
-    left:30%;
-
-    width:34px;
-
-    transform:rotate(-18deg);
-
+    top:26%;
+    right:18%;
+    width:35px;
+    transform:rotate(12deg);
 }
 
 
-.cake2{
+/* Mitte */
 
-    top:56%;
-    right:38%;
+.pot1{
+    top:45%;
+    left:48%;
+    width:55px;
+    transform:rotate(-10deg);
+}
 
+.leaves2{
+    top:45%;
+    right:10%;
+    width:45px;
+    transform:rotate(35deg);
+}
+
+.cup1{
+    top:48%;
+    left:12%;
+    width:42px;
+    transform:rotate(-20deg);
+}
+
+
+/* untere Hälfte */
+
+.butterfly2{
+    top:65%;
+    left:25%;
     width:32px;
-
     transform:rotate(25deg);
+}
 
+.flower1{
+    top:68%;
+    right:28%;
+    width:38px;
+    transform:rotate(-15deg);
+}
+
+.stamp2{
+    top:72%;
+    right:8%;
+    width:58px;
+    transform:rotate(20deg);
+}
+
+
+/* ganz unten */
+
+.bow2{
+    bottom:8%;
+    left:10%;
+    width:40px;
+    transform:rotate(-25deg);
+}
+
+.leaves3{
+    bottom:10%;
+    left:45%;
+    width:50px;
+    transform:rotate(15deg);
+}
+
+.cup2{
+    bottom:8%;
+    right:35%;
+    width:38px;
+    transform:rotate(-20deg);
+}
+
+.butterfly3{
+    bottom:12%;
+    right:10%;
+    width:34px;
+    transform:rotate(35deg);
+}
+
+
+/* kleine Extras */
+
+.stamp3{
+    top:52%;
+    left:78%;
+    width:45px;
+    transform:rotate(-30deg);
+}
+
+.cake2{
+    bottom:30%;
+    left:55%;
+    width:30px;
+    transform:rotate(18deg);
 }
