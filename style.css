@@ -736,23 +736,105 @@ textarea{
 
 }
 
-.stamp1{ width:55px; }
-.stamp2{ width:60px; }
+.bow1{
 
-.bow1{ width:45px; }
-.bow2{ width:40px; }
+    top:12%;
+    right:8%;
 
-.butterfly1{ width:42px; }
-.butterfly2{ width:36px; }
-.butterfly3{ width:40px; }
+    width:45px;
 
-.leaves1{ width:55px; }
-.leaves2{ width:50px; }
+    transform:rotate(18deg);
 
-.flower1{ width:55px; }
+}
 
-.cup1{ width:55px; }
+.bow2{
 
-.pot1{ width:60px; }
+    bottom:18%;
+    left:10%;
 
-.cake1{ width:50px; }
+    width:40px;
+
+    transform:rotate(-12deg);
+
+}
+
+.butterfly1{
+
+    top:32%;
+    left:6%;
+
+    width:40px;
+
+}
+
+.butterfly2{
+
+    top:70%;
+    right:12%;
+
+    width:35px;
+
+}
+
+.butterfly3{
+
+    bottom:8%;
+    left:45%;
+
+    width:38px;
+
+}
+
+.leaves1{
+
+    top:10%;
+    left:42%;
+
+    width:55px;
+
+}
+
+.leaves2{
+
+    bottom:28%;
+    right:22%;
+
+    width:50px;
+
+}
+
+.flower1{
+
+    top:55%;
+    left:82%;
+
+    width:50px;
+
+}
+
+.cup1{
+
+    bottom:6%;
+    left:25%;
+
+    width:55px;
+
+}
+
+.pot1{
+
+    top:74%;
+    right:40%;
+
+    width:60px;
+
+}
+
+.cake1{
+
+    top:28%;
+    right:28%;
+
+    width:48px;
+
+}
