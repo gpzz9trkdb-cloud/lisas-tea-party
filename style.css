@@ -713,7 +713,7 @@ textarea{
 
     position:absolute;
 
-    opacity:.82;
+    opacity:.92;
 
     user-select:none;
 
@@ -886,4 +886,51 @@ textarea{
     right:32%;
     width:42px;
     transform:rotate(42deg);
+}
+
+.leaves5{
+
+    top:58%;
+    left:34%;
+
+    width:42px;
+
+    transform:rotate(-58deg);
+
+}
+
+.butterfly5{
+
+    top:22%;
+
+    left:58%;
+
+    width:32px;
+
+    transform:rotate(38deg);
+
+}
+
+.stamp4{
+
+    bottom:18%;
+
+    left:72%;
+
+    width:52px;
+
+    transform:rotate(-26deg);
+
+}
+
+.bow4{
+
+    top:42%;
+
+    right:18%;
+
+    width:34px;
+
+    transform:rotate(84deg);
+
 }
