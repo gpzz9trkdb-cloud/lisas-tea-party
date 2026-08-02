@@ -713,7 +713,7 @@ textarea{
 
     position:absolute;
 
-    opacity:.55;
+    opacity:.82;
 
     user-select:none;
 
@@ -851,5 +851,95 @@ textarea{
     right:28%;
 
     width:48px;
+
+}
+
+/* dritte Briefmarke */
+
+.stamp3{
+
+    top:48%;
+    left:90%;
+
+    width:52px;
+
+    transform:rotate(-18deg);
+
+}
+
+/* dritte Schleife */
+
+.bow3{
+
+    top:82%;
+    right:6%;
+
+    width:38px;
+
+    transform:rotate(10deg);
+
+}
+
+/* vierter Schmetterling */
+
+.butterfly4{
+
+    top:18%;
+    left:72%;
+
+    width:36px;
+
+}
+
+/* weitere Blätter */
+
+.leaves3{
+
+    top:45%;
+    left:2%;
+
+    width:46px;
+
+}
+
+.leaves4{
+
+    bottom:4%;
+    right:55%;
+
+    width:50px;
+
+}
+
+/* zweiter Kuchen */
+
+.cake2{
+
+    top:6%;
+    right:34%;
+
+    width:42px;
+
+}
+
+/* zweite Tasse */
+
+.cup2{
+
+    bottom:36%;
+    left:86%;
+
+    width:46px;
+
+}
+
+/* zweite Blume */
+
+.flower2{
+
+    top:74%;
+    left:16%;
+
+    width:44px;
 
 }
