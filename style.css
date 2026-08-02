@@ -29,26 +29,18 @@ body{
 
     background-color:#f8f5ef;
 
-    background-image:
+    background-image:url("assets/backgrounds/background.JPEG");
 
-    repeating-linear-gradient(
-        0deg,
-        rgba(170,185,170,.08) 0px,
-        rgba(170,185,170,.08) 1px,
-        transparent 1px,
-        transparent 22px
-    ),
+    background-size:cover;
 
-    repeating-linear-gradient(
-        90deg,
-        rgba(170,185,170,.08) 0px,
-        rgba(170,185,170,.08) 1px,
-        transparent 1px,
-        transparent 22px
-    );
+    background-position:center;
+
+    background-repeat:no-repeat;
 
     font-family:"Lora",serif;
+
     color:#5d4b45;
+
     overflow:hidden;
 
 }
