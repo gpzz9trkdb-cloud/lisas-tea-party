@@ -846,3 +846,32 @@ textarea{
     width:30px;
     transform:rotate(18deg);
 }
+
+/* =========================
+   FIX: RIESIGE DOODLES
+========================= */
+
+/* Schleifen */
+.bow1,
+.bow2,
+.bow3 {
+    width:42px !important;
+}
+
+
+/* Schmetterlinge */
+.butterfly1,
+.butterfly2,
+.butterfly3,
+.butterfly4 {
+    width:36px !important;
+}
+
+
+/* Blätter */
+.leaves1,
+.leaves2,
+.leaves3,
+.leaves4 {
+    width:45px !important;
+}
