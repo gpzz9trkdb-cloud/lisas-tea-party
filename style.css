@@ -708,6 +708,7 @@ textarea{
 .doodle{
     position:absolute;
     opacity:.9;
+    z-index:2;
 }
 
 
@@ -874,4 +875,51 @@ textarea{
 .leaves3,
 .leaves4 {
     width:45px !important;
+}
+
+/* =========================
+   DOODLE GRÖSSEN FIX
+========================= */
+
+
+/* Blätter */
+.leaves2{
+    width:42px !important;
+}
+
+
+/* Schmetterlinge */
+.butterfly2{
+    width:30px !important;
+}
+
+.butterfly3{
+    width:32px !important;
+}
+
+
+/* Blume */
+.flower1{
+    width:34px !important;
+}
+
+
+/* fehlende / zu kleine Motive sichtbar machen */
+
+.stamp2{
+    top:68%;
+    right:6%;
+    width:58px !important;
+}
+
+.stamp3{
+    top:46%;
+    left:78%;
+    width:48px !important;
+}
+
+.cake2{
+    bottom:25%;
+    right:35%;
+    width:32px !important;
 }
