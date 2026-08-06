@@ -28,34 +28,41 @@ function openInvitation(){
     const letter = document.querySelector(".letter");
 
 
-    // Schritt 1: Brief kommt aus Umschlag
+    // 1. Brief zieht sich aus dem Umschlag
     letter.style.transform =
         "translateX(-50%) translateY(-80px)";
 
 
-    // Schritt 2: Brief wird größer
+    // 2. Umschlag verschwindet
+    setTimeout(()=>{
+
+        envelope.style.opacity = "0";
+
+    },1000);
+
+
+    // 3. Brief wird groß
     setTimeout(()=>{
 
         letter.style.transform =
             "translateX(-50%) translateY(-80px) scale(2.8)";
 
-    },900);
+    },1500);
 
 
-    // Schritt 3: zur Einladung wechseln
+    // 4. Übergang zur Einladung
     setTimeout(()=>{
 
-        envelope.style.opacity = "0";
         letter.style.opacity = "0";
 
-    },2200);
+    },2800);
 
 
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },2600);
+    },3200);
 
 }
 
