@@ -689,3 +689,85 @@ textarea{
 
 }
 
+/* ==========================
+   KARTEN DOODLES
+========================== */
+
+.card-doodle{
+
+    position:absolute;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    opacity:.95;
+
+}
+
+
+/* Einladung */
+
+.cup-card{
+
+    width:45px;
+
+    top:20px;
+
+    right:20px;
+
+    transform:rotate(12deg);
+
+}
+
+
+.cake-card{
+
+    width:42px;
+
+    bottom:25px;
+
+    left:18px;
+
+    transform:rotate(-10deg);
+
+}
+
+
+.butterfly-card{
+
+    width:35px;
+
+    top:75px;
+
+    left:15px;
+
+    transform:rotate(-20deg);
+
+}
+
+
+.stamp-card{
+
+    width:42px;
+
+    bottom:20px;
+
+    right:18px;
+
+    transform:rotate(15deg);
+
+}
+
+
+.bow-card{
+
+    width:38px;
+
+    top:15px;
+
+    left:20px;
+
+    transform:rotate(-15deg);
+
+}
