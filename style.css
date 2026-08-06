@@ -767,3 +767,46 @@ textarea{
     transform:rotate(-15deg);
 
 }
+
+/* ==========================
+   GETRÄNKE KARTE DOODLES
+========================== */
+
+
+.drink-leaves{
+
+    width:36px;
+
+    top:18px;
+
+    left:14px;
+
+    transform:rotate(-18deg);
+
+}
+
+
+.drink-flower{
+
+    width:38px;
+
+    bottom:18px;
+
+    left:15px;
+
+    transform:rotate(-10deg);
+
+}
+
+
+.drink-cake{
+
+    width:40px;
+
+    bottom:20px;
+
+    right:18px;
+
+    transform:rotate(12deg);
+
+}
