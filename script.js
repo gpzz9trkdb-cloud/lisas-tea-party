@@ -72,10 +72,6 @@ createPetals();
 
     showPage("thanks");
 
-    
-
-},900);
-
 return;
   
 }
