@@ -932,3 +932,59 @@ textarea{
     max-height:85vh;
 
 }
+
+/* ==========================
+   DANKE KARTE DOODLES
+========================== */
+
+
+.thanks-dandelion{
+
+    width:40px;
+
+    top:15px;
+
+    left:15px;
+
+    transform:rotate(-12deg);
+
+}
+
+
+.thanks-bow{
+
+    width:38px;
+
+    top:18px;
+
+    right:18px;
+
+    transform:rotate(15deg);
+
+}
+
+
+.thanks-stamp{
+
+    width:34px;
+
+    bottom:20px;
+
+    left:18px;
+
+    transform:rotate(-18deg);
+
+}
+
+
+.thanks-butterfly{
+
+    width:32px;
+
+    bottom:18px;
+
+    right:20px;
+
+    transform:rotate(20deg);
+
+}
