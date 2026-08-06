@@ -25,15 +25,17 @@ function showPage(pageId) {
 function openInvitation(){
 
     const letter = document.querySelector(".letter");
+    const envelope = document.querySelector(".envelope");
 
-    letter.style.transform =
-        "translateX(-50%) translateY(-45px)";
+    letter.classList.add("open");
+
+    envelope.style.opacity = "0";
 
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },600);
+    },1200);
 
 }
 
