@@ -28,16 +28,15 @@ function openInvitation(){
 
     letter.classList.add("open");
 
-
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },1500);
+    },900);
 
 }
 
-}
+
 
 // ==========================
 // ZUSAGE
