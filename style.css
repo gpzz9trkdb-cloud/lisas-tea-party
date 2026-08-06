@@ -1071,3 +1071,20 @@ textarea{
         scale(1);
 
 }
+
+/* ==========================
+   GIRLANDE DANKE KARTE
+========================== */
+
+.garland-card{
+
+    width:220px;
+
+    top:-45px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+}
