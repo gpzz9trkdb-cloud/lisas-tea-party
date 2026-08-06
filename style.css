@@ -724,3 +724,46 @@ textarea{
     right:20px;
     transform:rotate(18deg);
 }
+
+/* ==========================
+   ZUSAGE KARTE DOODLES
+========================== */
+
+
+.yes-stamp{
+
+    width:38px;
+
+    top:18px;
+
+    left:18px;
+
+    transform:rotate(-12deg);
+
+}
+
+
+.yes-cup{
+
+    width:45px;
+
+    top:15px;
+
+    right:18px;
+
+    transform:rotate(10deg);
+
+}
+
+
+.yes-butterfly{
+
+    width:32px;
+
+    bottom:20px;
+
+    right:20px;
+
+    transform:rotate(-15deg);
+
+}
