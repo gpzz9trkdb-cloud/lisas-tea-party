@@ -916,3 +916,19 @@ textarea{
     transform:rotate(15deg);
 
 }
+
+/* ==========================
+   GESCHENKE KARTE KLEINER
+========================== */
+
+#gifts .paper{
+
+    width:min(88%,360px);
+
+    padding:18px 20px;
+
+    top:0;
+
+    max-height:85vh;
+
+}
