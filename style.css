@@ -1042,3 +1042,32 @@ textarea{
     transform:rotate(15deg);
 
 }
+
+/* ==========================
+   EINLADUNG ERSCHEINEN
+========================== */
+
+#invitation .paper{
+
+    opacity:0;
+
+    transform:
+        translateY(30px)
+        scale(.92);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+
+#invitation.active .paper{
+
+    opacity:1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
