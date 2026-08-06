@@ -29,7 +29,7 @@ function openInvitation(){
     const hero = document.querySelector(".hero");
 
     letter.style.transform =
-        "translateX(-50%) translateY(-80px)";
+    "translateX(-50%) translateY(-80px) scale(2.8)";
 
     setTimeout(()=>{
 
