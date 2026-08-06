@@ -477,62 +477,6 @@ textarea{
 
 }
 
-.paper img.decor{
-
-    position:absolute;
-
-    pointer-events:none;
-
-    user-select:none;
-
-    opacity:.9;
-
-}
-
-.tea{
-
-    width:70px;
-
-    top:-18px;
-
-    right:-12px;
-
-}
-
-.cake{
-
-    width:65px;
-
-    bottom:18px;
-
-    left:-18px;
-
-}
-
-.butterfly{
-
-    width:42px;
-
-    top:55px;
-
-    left:-16px;
-
-    transform:rotate(-15deg);
-
-}
-
-.stamp{
-
-    width:55px;
-
-    top:18px;
-
-    right:28px;
-
-    transform:rotate(10deg);
-
-}
-
 
 @keyframes fadePaper{
 
