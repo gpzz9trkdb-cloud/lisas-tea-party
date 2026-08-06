@@ -520,42 +520,6 @@ textarea{
 }
 
 /* ===========================
-   HERZEN
-=========================== */
-
-.heart{
-
-    position:fixed;
-
-    font-size:22px;
-
-    pointer-events:none;
-
-    animation:heartFloat 2.5s linear forwards;
-
-    z-index:9999;
-
-}
-
-@keyframes heartFloat{
-
-    from{
-
-        opacity:1;
-        transform:translateY(0) scale(1);
-
-    }
-
-    to{
-
-        opacity:0;
-        transform:translateY(-180px) scale(1.6);
-
-    }
-
-}
-
-/* ===========================
    BLÜTEN
 =========================== */
 
@@ -600,20 +564,6 @@ textarea{
         opacity:.95;
 
     }
-
-}
-
-.heart{
-
-    position:fixed;
-
-    left:50%;
-
-    bottom:50px;
-
-    font-size:40px;
-
-    z-index:99999;
 
 }
 
