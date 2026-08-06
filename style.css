@@ -111,13 +111,13 @@ body{
 
     position:absolute;
 
-    width:34%;
+    width:28%;
 
     aspect-ratio:6/5;
 
     left:50%;
 
-    bottom:22px;
+    bottom:35px;
 
     transform:translateX(-50%);
 
