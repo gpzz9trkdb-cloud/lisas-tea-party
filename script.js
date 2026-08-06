@@ -15,11 +15,16 @@ const supabaseClient = window.supabase.createClient(
 // ==========================
 
 function showPage(pageId) {
+
     document.querySelectorAll(".page").forEach(page => {
         page.classList.remove("active");
     });
 
-    document.getElementById(pageId).classList.add("active");
+
+    const newPage = document.getElementById(pageId);
+
+    newPage.classList.add("active");
+
 }
 
 function openInvitation(){
