@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,8 +13,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 </head>
-    
-    
+
+
+<body>
+
+
 <!-- ================= START ================= -->
 
 <section id="start" class="page active">
@@ -24,38 +29,69 @@
             <div class="letter"></div>
 
             <img
-                src="assets/illustrations/IMG_1650.png"
-                class="envelope"
-                alt="Briefumschlag">
+            src="assets/illustrations/IMG_1650.png"
+            class="envelope"
+            alt="Briefumschlag">
 
         </div>
 
-        <h1>Für dich ist Post angekommen :)</h1>
+
+        <h1>
+            Für dich ist Post angekommen :)
+        </h1>
+
 
         <button onclick="openInvitation()">
             💌 Öffnen
         </button>
 
+
     </div>
 
 </section>
 
+
+
 <!-- ================= EINLADUNG ================= -->
+
 
 <section id="invitation" class="page">
 
+
 <div class="paper">
-    <img src="assets/doodles/cup.png.PNG" class="card-doodle cup-card">
 
-<img src="assets/doodles/cake.png.PNG" class="card-doodle cake-card">
 
-<img src="assets/doodles/butterfly.png.PNG" class="card-doodle butterfly-card">
+<img 
+src="assets/doodles/cup.png.PNG"
+class="card-doodle cup-card">
 
-<img src="assets/doodles/stamp.png.PNG" class="card-doodle stamp-card">
 
-<img src="assets/doodles/bow.png.PNG" class="card-doodle bow-card">
+<img 
+src="assets/doodles/cake.png.PNG"
+class="card-doodle cake-card">
 
-<h1>Hallo Maus &lt;3</h1>
+
+<img 
+src="assets/doodles/butterfly.png.PNG"
+class="card-doodle butterfly-card">
+
+
+<img 
+src="assets/doodles/stamp.png.PNG"
+class="card-doodle stamp-card">
+
+
+<img 
+src="assets/doodles/bow.png.PNG"
+class="card-doodle bow-card">
+
+
+
+<h1>
+Hallo Maus &lt;3
+</h1>
+
+
 
 <p class="intro">
 
@@ -64,32 +100,65 @@ meinen Geburtstag mit dir zu verbringen.
 
 <br><br>
 
-Dich erwartet win paar Snacks,
+Dich erwarten ein paar Snacks,
 gute Gespräche
 und eine kleine kreative Überraschung.
 
 </p>
 
+
+
 <div class="details">
 
-    <div class="detail">
-        <h3>📅 Datum</h3>
-        <p>05. September 2026</p>
-    </div>
 
-    <div class="detail">
-        <h3>🕒 Uhrzeit</h3>
-        <p>11:00 Uhr</p>
-    </div>
+<div class="detail">
 
-    <div class="detail">
-        <h3>📍 Ort</h3>
-        <p>Bei mir zu Hause</p>
-    </div>
+<h3>
+📅 Datum
+</h3>
+
+<p>
+05. September 2026
+</p>
 
 </div>
 
+
+
+<div class="detail">
+
+<h3>
+🕒 Uhrzeit
+</h3>
+
+<p>
+11:00 Uhr
+</p>
+
+</div>
+
+
+
+<div class="detail">
+
+<h3>
+📍 Ort
+</h3>
+
+<p>
+Bei mir zu Hause
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
 <div class="choices">
+
 
 <button onclick="showPage('yes')">
 
@@ -97,27 +166,39 @@ Ich bin dabei!
 
 </button>
 
-<button class="secondary"
 
+<button 
+class="secondary"
 onclick="showPage('no')">
 
 Leider kann ich nicht :(
 
 </button>
 
-</div>
+
 
 </div>
+
+
+
+</div>
+
 
 </section>
 
-<!-- ================= ZUSAGE ================= -->
+    <!-- ================= ZUSAGE ================= -->
+
 
 <section id="yes" class="page">
 
+
 <div class="paper">
 
-<h1>Wer hat meinen Brief geöffnet? :)</h1>
+
+<h1>
+Wer hat meinen Brief geöffnet? :)
+</h1>
+
 
 <p>
 
@@ -125,9 +206,15 @@ Verrate mir noch kurz deinen Namen.
 
 </p>
 
+
+
 <input
+
 id="nameYes"
+
 placeholder="Dein Name">
+
+
 
 <button onclick="showPage('drink')">
 
@@ -135,23 +222,41 @@ Weiter
 
 </button>
 
+
+
 </div>
+
 
 </section>
 
+
+
+
+
 <!-- ================= GETRÄNKE ================= -->
+
 
 <section id="drink" class="page">
 
+
 <div class="paper">
 
-<h1>Fast geschafft :)</h1>
+
+
+<h1>
+Fast geschafft :)
+</h1>
+
+
 
 <p>
 
 Hast du einen Getränkewunsch?
 
 </p>
+
+
+
 
 <textarea
 
@@ -161,21 +266,46 @@ placeholder="Zum Beispiel Cola, Aperol, Eistee...">
 
 </textarea>
 
+
+
+
 <button onclick="showPage('gifts')">
 
 Weiter
 
 </button>
 
+
+
 </div>
+
 
 </section>
 
+
+
+
+
 <!-- ================= GESCHENKE ================= -->
+
 
 <section id="gifts" class="page">
 
+
 <div class="paper">
+
+
+
+<img 
+src="assets/doodles/flower.png.PNG"
+class="card-doodle flower-card">
+
+
+<img 
+src="assets/doodles/leaves.png.PNG"
+class="card-doodle leaves-card">
+
+
 
 <h1>
 
@@ -183,17 +313,25 @@ Du hast nach Geschenkideen gefragt? &lt;3
 
 </h1>
 
+
+
 <p>
 
 Am meisten freue ich mich natürlich,
-
 dass du dabei bist.
+
+<br><br>
 
 Falls du trotzdem etwas schenken möchtest:
 
 </p>
 
+
+
+
 <div class="gift-grid">
+
+
 
 <div class="gift">
 
@@ -201,11 +339,15 @@ IKEA Gutschein
 
 </div>
 
+
+
 <div class="gift">
 
 weiße Schokolade
 
 </div>
+
+
 
 <div class="gift">
 
@@ -213,29 +355,46 @@ Rosen oder Blumen in Altrosa
 
 </div>
 
+
+
 <div class="gift">
 
 ein kleiner Zuschuss
-
+<br>
 für meine Reisekasse
 
 </div>
 
+
+
 </div>
 
+
+
+
+
 <button onclick="saveYes()">
-    Ich freue mich schon :)
+
+Ich freue mich schon :)
+
 </button>
-    
+
+
+
 </div>
+
 
 </section>
 
-<!-- ================= ABSAGE ================= -->
+    <!-- ================= ABSAGE ================= -->
+
 
 <section id="no" class="page">
 
+
 <div class="paper">
+
+
 
 <h1>
 
@@ -243,13 +402,17 @@ Schade :(
 
 </h1>
 
+
+
 <p>
 
 Ich hätte mich sehr gefreut,
-
 dich dabei zu haben.
 
 </p>
+
+
+
 
 <input
 
@@ -257,21 +420,36 @@ id="nameNo"
 
 placeholder="Dein Name">
 
+
+
+
+
 <button onclick="saveNo()">
 
 Absenden
 
 </button>
 
+
+
 </div>
+
 
 </section>
 
+
+
+
+
 <!-- ================= DANKE ================= -->
+
 
 <section id="thanks" class="page">
 
+
 <div class="paper">
+
+
 
 <h1>
 
@@ -279,35 +457,49 @@ Danke &lt;3
 
 </h1>
 
+
+
 <p>
 
 Ich freue mich riesig
-
 auf einen schönen Tag mit dir.
 
 <br><br>
 
-Du kannst dich auf leckere Snacks, tolle Gespräche und
-
-ein bisschen kreativ. :)
+Dich erwarten leckere Snacks,
+tolle Gespräche
+und ein bisschen Kreativität. :)
 
 <br><br>
 
 Bis bald,
 
+<br>
+
 deine Lisa
 
 </p>
 
+
+
 </div>
+
 
 </section>
 
+
+
+
+
 <!-- ================= ABSAGE DANKE ================= -->
+
 
 <section id="thanksNo" class="page">
 
+
 <div class="paper">
+
+
 
 <h1>
 
@@ -315,31 +507,37 @@ Schade &lt;3
 
 </h1>
 
+
+
 <p>
 
 Danke,
-
 dass du mir Bescheid gegeben hast.
 
 <br><br>
 
 Ich hoffe,
-
 wir sehen uns ganz bald wieder.
 
 <br><br>
 
 Bis bald,
 
-Lisa <3
+<br>
+
+Lisa &lt;3
 
 </p>
 
+
+
 </div>
+
 
 </section>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
