@@ -66,13 +66,13 @@ async function saveYes() {
         return;
     }
 
-    createHearts();
+    
 
-setTimeout(()=>{
+createPetals();
 
     showPage("thanks");
 
-    createPetals();
+    
 
 },900);
 
@@ -111,38 +111,6 @@ async function saveNo() {
 showPage("thanksNo");
 }
 
-// ==========================
-// HERZEN
-// ==========================
-
-function createHearts(){
-
-    alert("Herzen werden gestartet!");
-    for(let i=0;i<18;i++){
-
-        const heart=document.createElement("div");
-
-        heart.className="heart";
-
-        heart.innerHTML="💗";
-
-        heart.style.left=Math.random()*100+"vw";
-
-        heart.style.bottom="0px";
-
-        heart.style.animationDelay=(Math.random()*0.6)+"s";
-
-        document.body.appendChild(heart);
-
-        setTimeout(()=>{
-
-            heart.remove();
-
-        },2600);
-
-    }
-
-}
 
 // ==========================
 // BLÜTEN
