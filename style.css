@@ -771,3 +771,10 @@ textarea{
     transform:rotate(-15deg);
 
 }
+
+.leaves-card{
+    width:38px;
+    top:18px;
+    right:20px;
+    transform:rotate(18deg);
+}
