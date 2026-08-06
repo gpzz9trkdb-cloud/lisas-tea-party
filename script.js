@@ -26,24 +26,36 @@ function openInvitation(){
 
     const envelope = document.querySelector(".envelope");
     const letter = document.querySelector(".letter");
-    const hero = document.querySelector(".hero");
 
+
+    // Schritt 1: Brief kommt aus Umschlag
     letter.style.transform =
-    "translateX(-50%) translateY(-80px) scale(2.8)";
+        "translateX(-50%) translateY(-80px)";
 
+
+    // Schritt 2: Brief wird größer
+    setTimeout(()=>{
+
+        letter.style.transform =
+            "translateX(-50%) translateY(-80px) scale(2.8)";
+
+    },900);
+
+
+    // Schritt 3: zur Einladung wechseln
     setTimeout(()=>{
 
         envelope.style.opacity = "0";
         letter.style.opacity = "0";
 
-    },800);
+    },2200);
 
 
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },1300);
+    },2600);
 
 }
 
