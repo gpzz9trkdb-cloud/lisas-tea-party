@@ -104,7 +104,9 @@ body{
     filter:drop-shadow(0 12px 20px rgba(0,0,0,.12));
 
     animation:float 4s ease-in-out infinite;
-
+   
+    transition:opacity .5s ease;
+    
 }
 
 .letter{
@@ -127,7 +129,11 @@ body{
 
     z-index:1;
 
-    transition:.6s;
+    opacity:1;
+
+    transition:
+        transform .8s ease,
+        opacity .5s ease;
 
 }
 
