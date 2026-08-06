@@ -26,13 +26,14 @@ function openInvitation(){
 
     const letter = document.querySelector(".letter");
 
-    letter.classList.add("open");
+    letter.style.transform =
+        "translateX(-50%) translateY(-45px)";
 
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },900);
+    },600);
 
 }
 
