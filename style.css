@@ -934,6 +934,62 @@ textarea{
 }
 
 /* ==========================
+   ABSAGE KARTE DOODLES
+========================== */
+
+
+.no-stamp{
+
+    width:34px;
+
+    top:18px;
+
+    left:15px;
+
+    transform:rotate(-15deg);
+
+}
+
+
+.no-leaves{
+
+    width:38px;
+
+    top:18px;
+
+    right:18px;
+
+    transform:rotate(20deg);
+
+}
+
+
+.no-teapot{
+
+    width:38px;
+
+    bottom:20px;
+
+    right:18px;
+
+    transform:rotate(-10deg);
+
+}
+
+
+.no-bow{
+
+    width:36px;
+
+    bottom:18px;
+
+    left:18px;
+
+    transform:rotate(15deg);
+
+}
+
+/* ==========================
    DANKE KARTE DOODLES
 ========================== */
 
