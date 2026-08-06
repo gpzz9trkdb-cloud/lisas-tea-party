@@ -111,13 +111,13 @@ body{
 
     position:absolute;
 
-    width:34%;
+    width:28%;
 
     aspect-ratio:6/5;
 
     left:50%;
 
-    bottom:22px;
+    bottom:35px;
 
     transform:
         translateX(-50%)
@@ -131,23 +131,20 @@ body{
 
     transition:
         transform 1s ease,
-        width 1s ease,
-        height 1s ease;
+        width 1s ease;
 
 }
-
 
 .letter.open{
 
-    width:250px;
-
-    height:360px;
+    width:34%;
 
     transform:
         translateX(-50%)
-        translateY(-170px);
+        translateY(-90px);
 
 }
+
 
 /* ---------------- KARTEN ---------------- */
 
