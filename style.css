@@ -235,6 +235,14 @@ body{
 
 }
 
+#gifts .paper p{
+
+    line-height:1.4;
+
+    margin-bottom:10px;
+
+}
+
 /* ---------------- DETAILS ---------------- */
 
 .details{
