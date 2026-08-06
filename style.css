@@ -111,15 +111,17 @@ body{
 
     position:absolute;
 
-    width:28%;
+    width:34%;
 
     aspect-ratio:6/5;
 
     left:50%;
 
-    bottom:35px;
+    bottom:22px;
 
-    transform:translateX(-50%);
+    transform:
+        translateX(-50%)
+        translateY(0);
 
     background:#fffdf9;
 
@@ -130,23 +132,20 @@ body{
     transition:
         transform 1s ease,
         width 1s ease,
-        height 1s ease,
-        opacity 1s ease;
+        height 1s ease;
 
 }
 
+
 .letter.open{
 
-    width:390px;
+    width:250px;
 
-    height:520px;
+    height:360px;
 
     transform:
         translateX(-50%)
-        translateY(-120px)
-        scale(1.05);
-
-    z-index:5;
+        translateY(-170px);
 
 }
 
