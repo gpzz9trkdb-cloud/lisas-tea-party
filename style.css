@@ -1044,3 +1044,59 @@ textarea{
     transform:rotate(20deg);
 
 }
+
+/* ==========================
+   ABSAGE DANKE KARTE DOODLES
+========================== */
+
+
+.thanksNo-leaves{
+
+    width:38px;
+
+    top:18px;
+
+    left:18px;
+
+    transform:rotate(-15deg);
+
+}
+
+
+.thanksNo-teacup{
+
+    width:40px;
+
+    top:15px;
+
+    right:18px;
+
+    transform:rotate(12deg);
+
+}
+
+
+.thanksNo-stamp{
+
+    width:34px;
+
+    bottom:18px;
+
+    left:20px;
+
+    transform:rotate(-18deg);
+
+}
+
+
+.thanksNo-bow{
+
+    width:38px;
+
+    bottom:18px;
+
+    right:20px;
+
+    transform:rotate(15deg);
+
+}
