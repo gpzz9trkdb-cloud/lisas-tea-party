@@ -24,16 +24,26 @@ function showPage(pageId) {
 
 function openInvitation(){
 
+    const envelope = document.querySelector(".envelope");
     const letter = document.querySelector(".letter");
+    const hero = document.querySelector(".hero");
 
     letter.style.transform =
-        "translateX(-50%) translateY(-45px)";
+        "translateX(-50%) translateY(-80px)";
+
+    setTimeout(()=>{
+
+        envelope.style.opacity = "0";
+        letter.style.opacity = "0";
+
+    },800);
+
 
     setTimeout(()=>{
 
         showPage("invitation");
 
-    },600);
+    },1300);
 
 }
 
